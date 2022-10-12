@@ -1,0 +1,41 @@
+/* imports */
+/* 
+----------------------
+|- This file contains:
+|- |- resets
+|- |- variables
+|- |- mixins
+|- |- utility class 
+-----------------------
+*/
+video {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+/* mixins */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: coral;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: lightblue;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+body {
+  background-color: white;
+}/*# sourceMappingURL=style.css.map */

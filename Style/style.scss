@@ -1,0 +1,36 @@
+/* imports */
+@import "./base";
+
+/* mixins */
+@mixin flex($direction, $background) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: $direction;
+    background: $background;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    place-items: center;
+}
+
+
+
+header {
+    @include flex(column,coral);
+}
+
+.contact {
+    @include flex(column,lightblue);
+}
+
+h1 { font-size: 20px;
+}
+
+body {
+    background-color: white;
+}

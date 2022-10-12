@@ -1,0 +1,22 @@
+// _base.scss
+
+/* 
+----------------------
+|- This file contains:
+|- |- resets
+|- |- variables
+|- |- mixins
+|- |- utility class 
+-----------------------
+*/
+
+
+// variables
+$primary-button: rgb(107, 176, 255);
+$body-font: 15px;
+
+//video
+video {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
