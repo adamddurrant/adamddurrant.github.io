@@ -11,26 +11,117 @@
     background: $background;
 }
 
-@mixin grid {
+@mixin project-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px;
-    place-items: center;
+    width:100%;
+    background-color: #fff;
+    color: #444;
+    grid-template-columns: 2fr 1fr;
+}
+
+@mixin headings {
+    h1, h2, h3,
+    h4, h5, h6 {
+        @content;
+    }
+}
+
+/* Variables + Other */
+
+// variables
+$primary-button: rgb(107, 176, 255);
+$body-font: 15px;
+
+//video
+video {
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 
+/* main styles */
+
+// heading font: dm-serif-display-regular - latin
+@include headings {
+    font-family: "DM Serif Display", serif;
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizelegibility;
+    line-height: 1.1;
+    src: url('../fonts/dm-serif-display-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/dm-serif-display-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/dm-serif-display-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/dm-serif-display-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/dm-serif-display-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/dm-serif-display-v10-latin-regular.svg#DMSerifDisplay') format('svg'); /* Legacy iOS */
+  }
+
+
+
+  body {
+    margin:0;
+    background-image: url("img/background.svg");
+}
+
+.nav {
+    display:none;
+}
 
 header {
-    @include flex(column,coral);
+    @include flex(column,x);
+}
+
+  .grid {
+    @include project-grid;
+  }
+  
+  .col {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+  }
+
+
+.container {
+    display: block;
+    margin: auto;
+    padding: 2%;
+    max-width: 750px;
+}
+
+h1 { 
+    font-size: 50px;
+}
+
+.intro {
+    display: block;
+    height:300px;
+    width:100%;
+    background-color: antiquewhite;
+    border-top: solid 3px rgb(0, 0, 0);
+    border-bottom: solid 3px rgb(0, 0, 0);
+}
+
+.project-icon {
+    width: auto;
+    height: 40px;
+    display: block;
+    max-width: 100%;
+    margin-bottom: 15px;
 }
 
 .contact {
     @include flex(column,lightblue);
 }
 
-h1 { font-size: 20px;
+p {
+    font-size:15px;
+    font-family: Archivo, sans-serif;
 }
 
-body {
-    background-color: white;
+.project-wrapper {
+    border: solid 3px rgb(0, 0, 0);
 }
+
+
