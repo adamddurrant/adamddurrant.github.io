@@ -8,13 +8,16 @@
 |- |- utility class 
 -----------------------
 */
+@import url("https://fonts.googleapis.com/css?family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
 video {
   width: 100%;
   aspect-ratio: 16/9;
 }
 
 /* mixins */
-/* Variables + Other */
+/* variables */
+/* video */
 video {
   width: 100%;
   aspect-ratio: 16/9;
@@ -23,18 +26,16 @@ video {
 /* main styles */
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: "DM Serif Display", serif;
+  font-family: "Vollkorn";
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   text-rendering: optimizelegibility;
   line-height: 1.1;
-  src: url("../fonts/dm-serif-display-v10-latin-regular.eot"); /* IE9 Compat Modes */
-  src: local(""), url("../fonts/dm-serif-display-v10-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/dm-serif-display-v10-latin-regular.woff2") format("woff2"), url("../fonts/dm-serif-display-v10-latin-regular.woff") format("woff"), url("../fonts/dm-serif-display-v10-latin-regular.ttf") format("truetype"), url("../fonts/dm-serif-display-v10-latin-regular.svg#DMSerifDisplay") format("svg"); /* Legacy iOS */
 }
 
 body {
   margin: 0;
-  background-image: url("img/background.svg");
+  background-image: url("https://i.ibb.co/KDG5R6n/Group-1.png");
 }
 
 .nav {
@@ -50,46 +51,48 @@ header {
   background: x;
 }
 
-.grid {
+.intro-grid {
   display: grid;
   width: 100%;
-  background-color: #fff;
-  color: #444;
-  grid-template-columns: 2fr 1fr;
+  color: rgb(0, 0, 0);
+  grid-template-columns: 1fr 0.7fr;
+}
+
+.intro-sub {
+  width: 90%;
 }
 
 .col {
-  background-color: #444;
-  color: #fff;
   padding: 20px;
+  margin: auto;
 }
 
 .container {
   display: block;
   margin: auto;
   padding: 2%;
-  max-width: 750px;
+  max-width: 1000px;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.social-item {
+  margin-right: 10px;
+  font-size: 17px;
+  font-family: "Work Sans", sans-serif;
+}
+
+.socials {
+  display: flex;
 }
 
 .intro {
   display: block;
   height: 300px;
   width: 100%;
-  background-color: antiquewhite;
-  border-top: solid 3px rgb(0, 0, 0);
-  border-bottom: solid 3px rgb(0, 0, 0);
-}
-
-.project-icon {
-  width: auto;
-  height: 40px;
-  display: block;
-  max-width: 100%;
-  margin-bottom: 15px;
 }
 
 .contact {
@@ -102,10 +105,77 @@ h1 {
 }
 
 p {
-  font-size: 15px;
-  font-family: Archivo, sans-serif;
+  font-size: 17px;
+  font-family: "Work Sans", sans-serif;
 }
 
-.project-wrapper {
-  border: solid 3px rgb(0, 0, 0);
+a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.item-link {
+  color: black;
+  text-decoration: none !important;
+}
+
+.item-link:hover {
+  color: #1ED291;
+  text-decoration: underline;
+}
+
+.intro-wrapper {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+#circle {
+  position: absolute;
+  z-index: -1;
+  top: -50;
+  left: 0;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+#circle text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+#circle svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 540px;
+  -webkit-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }/*# sourceMappingURL=style.css.map */
