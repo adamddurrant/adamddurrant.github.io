@@ -1,58 +1,119 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex"> <!-- keep page out of search engines-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <!-- keep page out of search engines-->
     <title>Document</title>
-    <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM-Serif-Display">
-</head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=DM-Serif-Display"
+    />
+  </head>
 
-<body>
-
-<header class="nav">
-</header>
+  <body>
+    <header class="nav"></header>
 
     <section class="intro">
-        <div class="container">
-            <div class="intro-wrapper">
-            <div class="intro-grid">
-                <div class="col col-1">
-                    <div class="first-col-content">
-                        <h1>Hi, I'm Adim Durrant</h1>
-                        <p class="intro-sub">I'm an SEO specialist aspiring to learn front-end engineering. I'm passionate about the web and love learning new technologies.</p>
-                   
-<div id="circle">
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="200px" height="200px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
-        <defs>
-            <path id="circlePath" d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "/>
-        </defs>
-        <circle cx="150" cy="100" r="75" fill="none"/>
-        <g>
-            <use xlink:href="#circlePath" fill="none"/>
-            <text fill="#00754B">
-                <textPath xlink:href="#circlePath"> &nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;seo turned front end dev &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;&nbsp;seo turned front end dev</textPath>
-            </text>
-        </g>
-    </svg>
-    </div>
-                    <div class="socials">
-                    <div class="social-item"><a class="item-link" href="#">Resume</a></div>
-                    <div class="social-item"><a class="item-link" href="#">Linkedin</a></div>
-                    <div class="social-item"><a class="item-link" href="#">Projects</a></div>
-                   </div>
-                   
-                    </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="intro-grid">
+            <div class="col col-1">
+              <div class="first-col-content">
+                <h1 class="main-heading">
+                  Hi, I'm <span class="name">Adam</span>
+                </h1>
+                <p class="intro-sub">
+                  I'm an SEO specialist retraining to pursue a career in
+                  front-end web development. I'm passionate about the web and I
+                  love learning and creating.
+                </p>
+
+                <div id="circle">
+                  <svg
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="100px"
+                    height="100px"
+                    viewBox="0 0 500 500"
+                    enable-background="new 0 0 200 200"
+                    xml:space="preserve"
+                  >
+                    <defs>
+                      <path
+                        id="circlePath"
+                        d=" M 250, 250 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                      />
+                    </defs>
+                    <circle cx="150" cy="100" r="75" fill="none" />
+                    <g>
+                      <use xlink:href="#circlePath" fill="none" />
+                      <text fill="#00754B">
+                        <textPath xlink:href="#circlePath">
+                          SEO to front-end&nbsp;&nbsp; · &nbsp;&nbsp;SEO to
+                          front-end&nbsp;&nbsp; · &nbsp;&nbsp;
+                        </textPath>
+                      </text>
+                    </g>
+                  </svg>
                 </div>
-                <div class="col col-2">
-                <img src="images/adam-durrant-memoji.png"/>
+                <div class="socials">
+                  <div class="social-item">
+                    <a class="item-link" href="#"><span>Linkedin</span>
+                    <img class="social-arrow" src="images/arrow-right.svg"/>
+                </a>
+                  </div>
+                  <div class="social-item">
+                    <a class="item-link" href="#"><span>Resume</span>
+                    <img class="social-arrow" src="images/arrow-right.svg"/>
+                </a>
+                  </div><div class="social-item">
+                    <a class="item-link" href="#"><span>Projects</span>
+                    <img class="social-arrow" src="images/arrow-right.svg"/>
+                </a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col col-2">
+              <img src="images/adam-durrant-memoji.png" />
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
     </section>
 
-</body>
+    <section class="projects">
+      <div class="container">
+        <div class="wrapper">
+          <h2 class="opaque-text">Works</h2>
+          <h3 class="opaque-text-description">Selected coding projects</h3>
+          <div class="project-grid">
+            <div class="col proj-col">
+              <h3 class="project-title">Project 1</h3>
+              <p class="project-description">
+                This is a new project where I built all these things, check it
+                out.
+              </p>
+              <a class="project-link" href="#">View Project</a>
+            </div>
+            <div class="col proj-col">
+                <h3 class="project-title">Project 2</h3>
+                <p class="project-description">
+                  This is a new project where I built all these things, check it
+                  out.
+                </p>
+                <a class="project-link" href="#">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

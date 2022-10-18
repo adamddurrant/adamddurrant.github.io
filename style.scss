@@ -1,199 +1,338 @@
 /* imports */
 @import "./base";
-@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
 
 /* mixins */
 @mixin flex($direction, $background) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: $direction;
-    background: $background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: $direction;
+  background: $background;
 }
 
 @mixin intro-grid {
-    display: grid;
-    width:100%;
-    color: rgb(0, 0, 0);
-    grid-template-columns: 1fr 0.7fr;
+  display: grid;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  grid-template-columns: 1fr 0.7fr;
+}
+
+@mixin project-grid {
+  display: grid;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  grid-template-columns: 1fr 1fr;
 }
 
 @mixin headings {
-    h1, h2, h3,
-    h4, h5, h6 {
-        @content;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @content;
+  }
 }
 
 /* variables */
-$primary-button: rgb(107, 176, 255);
+$primary-button: rgb(0, 0, 0);
 $body-font: 15px;
 
 /* video */
 video {
-    width: 100%;
-    aspect-ratio: 16/9;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
 /* main styles */
 
 @include headings {
-    font-family: "Vollkorn";
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizelegibility;
-    line-height: 1.1;
+  font-family: "Vollkorn";
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizelegibility;
+  line-height: 1.1;
 }
 
-  body {
-    margin:0;
-    background-image: url("images/background.png");
+body {
+  margin: 0;
+  background-image: radial-gradient(circle farthest-corner at 100% 0%, #00754B, transparent 31%), radial-gradient(circle farthest-corner at 75% 90%, #1ED291, transparent 53%);
 }
 
 .nav {
-    display:none;
+  display: none;
 }
 
-header {
-    @include flex(column,x);
+.intro-grid {
+  @include intro-grid;
 }
 
-  .intro-grid {
-    @include intro-grid;
-  }
-  
+.intro-sub {
+  width: 90%;
+  margin-top: 30px;
+}
 
- .intro-sub {
-    width: 90%;
- }
+.main-underline {
+  width: 50%;
+  margin-left: auto;
+  display: absolute;
+  margin-right: 20px;
+}
 
-  .col {
-    padding: 20px;
-    margin: auto;
-  }
+.main-heading {
+  margin-bottom: 5px;
+}
 
+.col {
+  padding: 20px;
+  margin: auto;
+}
 
 .container {
-    display: block;
-    margin: auto;
-    padding: 2%;
-    max-width: 1000px;
+  display: block;
+  margin: auto;
+  padding: 2%;
+  max-width: 1000px;
 }
 
-h1 { 
-    font-size: 60px;
-    margin-bottom: 20px;
+h1 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
 .social-item {
-    margin-right:10px;
-    font-size:17px;
-    font-family: "Work Sans",sans-serif;
+  margin-right: 30px;
+  font-size: 17px;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  transition: .3s all;
+  transform: translate3d(0px, 0px, 0px);
+
+}
+
+.social-arrow {
+    width: 30px;
+    transition: .3s all;
+    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+}
+
+
+.social-item:hover > .item-link > .social-arrow {
+    transition: .3s all;
+    transform: translate3d(10px, 0px, 0px) rotate(45deg);
+    filter: invert(58%) sepia(91%) saturate(398%) hue-rotate(107deg) brightness(99%) contrast(85%); // svg color change on hover
+}
+
+.social-item:hover {
+    transition: .3s all;
+    transform: translate3d(0px, -5px, 0px);
 }
 
 .socials {
-    display: flex;
+  display: flex;
+  margin-top: 30px;
 }
 
 .intro {
-    display: block;
-    height:300px;
-    width:100%;
+  display: block;
+  width: 100%;
 }
 
+
 .contact {
-    @include flex(column,lightblue);
+  @include flex(column, lightblue);
 }
 
 p {
-    font-size:17px;
-    font-family: "Work Sans",sans-serif;
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: normal;
+  font-family: "Work Sans", sans-serif;
 }
 
 a:-webkit-any-link {
-    color: black;
-    cursor: pointer;
-    text-decoration: underline;
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .item-link {
-    color: black;
-    text-decoration: none!important;
+  color: black;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
 }
 
 .item-link:hover {
-    color:#1ED291;
-    text-decoration: underline;
+  color: #1ed291;
+  text-decoration: underline;
+  transition: 0.2s;
 }
 
-
-.intro-wrapper {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+.wrapper {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
+// name underline
+.name {
+  position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 1.1rem;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+// name underline reveal on hover
+.name:hover {
+  &::after {
+    background-image: url("images/underline-green.svg");
+    animation: fadeIn 0.5s;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.project-grid {
+  @include project-grid;
+  column-gap: 2rem;
+}
+
+.proj-col {
+  border: 3px solid #00754b;
+  padding: 10%;
+  border-radius: 10px;
+}
+
+.projects {
+    display: block;
+    width: 100%;
+}
+
+.project-title {
+    font-size:50px;
+    margin: 0 0 20px 0;
+    color:#00754B;
+}
+
+.opaque-text {
+    color:#161313;
+    opacity: 10%;
+    font-size: 100px;
+    margin-bottom: 0px;
+}
+
+.opaque-text-description {
+    font-family: "Work Sans", sans-serif;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
 
 // text circle animation
-#circle { 
-    position: absolute; 
-    z-index: -1;
-    top: -50;
-    left: 0;
-    width: 100%; 
-    padding-bottom: 100%; 
-    overflow: hidden; 
+#circle {
+  position: absolute;
+  z-index: -1;
+  letter-spacing: 3px;
+  top: -50;
+  left: 50;
+  width: 90%;
+  padding-bottom: 25%;
+  overflow: hidden;
 }
 
-#circle text { font-family: "Work Sans",sans-serif; font-size: 10px; font-weight: 200; text-transform: uppercase; }
+#circle text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
 
-#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 540px;
+#circle svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 540px;
 
   -webkit-animation-name: rotate;
-     -moz-animation-name: rotate;
-      -ms-animation-name: rotate;
-       -o-animation-name: rotate;
-          animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
+  animation-name: rotate;
   -webkit-animation-duration: 5s;
-     -moz-animation-duration: 5s;
-      -ms-animation-duration: 5s;
-       -o-animation-duration: 5s;
-          animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-     -moz-animation-iteration-count: infinite;
-      -ms-animation-iteration-count: infinite;
-       -o-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-     -moz-animation-timing-function: linear;
-      -ms-animation-timing-function: linear;
-       -o-animation-timing-function: linear;
-          animation-timing-function: linear;
-
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes rotate {
-    from { -webkit-transform: rotate(360deg); }
-    to { -webkit-transform: rotate(0); }
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+  }
 }
 @-moz-keyframes rotate {
-    from { -moz-transform: rotate(360deg); }
-    to { -moz-transform: rotate(0); }
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0);
+  }
 }
 @-ms-keyframes rotate {
-    from { -ms-transform: rotate(360deg); }
-    to { -ms-transform: rotate(0); }
+  from {
+    -ms-transform: rotate(360deg);
+  }
+  to {
+    -ms-transform: rotate(0);
+  }
 }
 @-o-keyframes rotate {
-    from { -o-transform: rotate(360deg); }
-    to { -o-transform: rotate(0); }
+  from {
+    -o-transform: rotate(360deg);
+  }
+  to {
+    -o-transform: rotate(0);
+  }
 }
 @keyframes rotate {
-    from { transform: rotate(360deg); }
-    to { transform: rotate(0); }
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }
-
-
-
