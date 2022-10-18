@@ -1,20 +1,6 @@
 /* imports */
-/* 
-----------------------
-|- This file contains:
-|- |- resets
-|- |- variables
-|- |- mixins
-|- |- utility class 
------------------------
-*/
 @import url("https://fonts.googleapis.com/css?family=Vollkorn&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
-video {
-  width: 100%;
-  aspect-ratio: 16/9;
-}
-
 /* mixins */
 /* variables */
 /* video */
@@ -39,7 +25,7 @@ h6 {
 
 body {
   margin: 0;
-  background-image: radial-gradient(circle farthest-corner at 100% 0%, #00754B, transparent 31%), radial-gradient(circle farthest-corner at 75% 90%, #1ED291, transparent 53%);
+  background-image: radial-gradient(circle farthest-corner at 100% 0%, #00754b, transparent 31%), radial-gradient(circle farthest-corner at 75% 90%, #1ed291, transparent 53%);
 }
 
 .nav {
@@ -56,6 +42,43 @@ body {
 .intro-sub {
   width: 90%;
   margin-top: 30px;
+}
+
+.skills {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px auto 0px auto;
+  padding: 20px 0;
+}
+
+.score {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.skills li {
+  list-style: none;
+  width: 130px;
+  margin: 0 20px;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.skills li img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.toolkit-heading {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
 }
 
 .main-underline {
@@ -159,11 +182,6 @@ a:-webkit-any-link {
   transition: 0.2s;
 }
 
-.wrapper {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-}
-
 .name {
   position: relative;
 }
@@ -224,7 +242,7 @@ a:-webkit-any-link {
 .project-title {
   font-size: 50px;
   margin: 0 0 20px 0;
-  color: #00754B;
+  color: #00754b;
 }
 
 .opaque-text {
@@ -238,6 +256,17 @@ a:-webkit-any-link {
   font-family: "Work Sans", sans-serif;
   margin-top: -20px;
   margin-bottom: 30px;
+}
+
+lottie-player {
+  position: absolute;
+  right: 100;
+  top: 200;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: flex-end;
 }
 
 #circle {
@@ -289,4 +318,5 @@ a:-webkit-any-link {
   to {
     transform: rotate(0);
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/* media queries *//*# sourceMappingURL=style.css.map */

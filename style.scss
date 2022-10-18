@@ -1,5 +1,4 @@
 /* imports */
-@import "./base";
 @import url("https://fonts.googleapis.com/css?family=Vollkorn&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
 
@@ -60,7 +59,12 @@ video {
 
 body {
   margin: 0;
-  background-image: radial-gradient(circle farthest-corner at 100% 0%, #00754B, transparent 31%), radial-gradient(circle farthest-corner at 75% 90%, #1ED291, transparent 53%);
+  background-image: radial-gradient(
+      circle farthest-corner at 100% 0%,
+      #00754b,
+      transparent 31%
+    ),
+    radial-gradient(circle farthest-corner at 75% 90%, #1ed291, transparent 53%);
 }
 
 .nav {
@@ -74,6 +78,56 @@ body {
 .intro-sub {
   width: 90%;
   margin-top: 30px;
+}
+
+.skills {
+  font-family: "Work Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0px auto 0px auto;
+  padding: 20px 0;
+}
+
+.score {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.skills li {
+  list-style: none;
+  width: 130px;
+  margin: 0 20px;
+  text-align: center;
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.skills li img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.toolkit-heading {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
 }
 
 .main-underline {
@@ -111,27 +165,26 @@ h1 {
   font-family: "Work Sans", sans-serif;
   display: flex;
   align-items: center;
-  transition: .3s all;
+  transition: 0.3s all;
   transform: translate3d(0px, 0px, 0px);
-
 }
 
 .social-arrow {
-    width: 30px;
-    transition: .3s all;
-    transform: translate3d(0px, 0px, 0px) rotate(0deg);
+  width: 30px;
+  transition: 0.3s all;
+  transform: translate3d(0px, 0px, 0px) rotate(0deg);
 }
 
-
 .social-item:hover > .item-link > .social-arrow {
-    transition: .3s all;
-    transform: translate3d(10px, 0px, 0px) rotate(45deg);
-    filter: invert(58%) sepia(91%) saturate(398%) hue-rotate(107deg) brightness(99%) contrast(85%); // svg color change on hover
+  transition: 0.3s all;
+  transform: translate3d(10px, 0px, 0px) rotate(45deg);
+  filter: invert(58%) sepia(91%) saturate(398%) hue-rotate(107deg)
+    brightness(99%) contrast(85%); // svg color change on hover
 }
 
 .social-item:hover {
-    transition: .3s all;
-    transform: translate3d(0px, -5px, 0px);
+  transition: 0.3s all;
+  transform: translate3d(0px, -5px, 0px);
 }
 
 .socials {
@@ -143,7 +196,6 @@ h1 {
   display: block;
   width: 100%;
 }
-
 
 .contact {
   @include flex(column, lightblue);
@@ -173,11 +225,6 @@ a:-webkit-any-link {
   color: #1ed291;
   text-decoration: underline;
   transition: 0.2s;
-}
-
-.wrapper {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
 }
 
 // name underline
@@ -225,27 +272,38 @@ a:-webkit-any-link {
 }
 
 .projects {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .project-title {
-    font-size:50px;
-    margin: 0 0 20px 0;
-    color:#00754B;
+  font-size: 50px;
+  margin: 0 0 20px 0;
+  color: #00754b;
 }
 
 .opaque-text {
-    color:#161313;
-    opacity: 10%;
-    font-size: 100px;
-    margin-bottom: 0px;
+  color: #161313;
+  opacity: 10%;
+  font-size: 100px;
+  margin-bottom: 0px;
 }
 
 .opaque-text-description {
-    font-family: "Work Sans", sans-serif;
-    margin-top: -20px;
-    margin-bottom: 30px;
+  font-family: "Work Sans", sans-serif;
+  margin-top: -20px;
+  margin-bottom: 30px;
+}
+
+lottie-player {
+  position: absolute;
+  right: 100;
+  top: 200;
+}
+
+.col-2 {
+  display: flex;
+  justify-content: flex-end;
 }
 
 // text circle animation
@@ -336,3 +394,5 @@ a:-webkit-any-link {
     transform: rotate(0);
   }
 }
+
+/* media queries */
