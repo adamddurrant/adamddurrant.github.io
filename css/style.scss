@@ -54,10 +54,59 @@ video {
 
 body {
   margin: 0;
-  background-image: url("/adamddurrant.github.io/images/background.svg");
-  background-size: cover;
+}
+
+.intro {
+  background-image: url(/adamddurrant.github.io/images/bg-1.svg);
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.projects {
+  background-image: url(/adamddurrant.github.io/images/bg-2.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.about {
+  background-image: url(/adamddurrant.github.io/images/bg-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.contact-form {
+  background-image: url(/adamddurrant.github.io/images/bg-1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+textarea {
+  min-height: 200px;
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 30px;
+}
+
+.form-button {
+}
+
+::placeholder {
+  color: #333;
 }
 
 .nav {
