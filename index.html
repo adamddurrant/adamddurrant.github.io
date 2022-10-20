@@ -3,12 +3,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex" />
     <!-- keep page out of search engines -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <!-- lottie animation -->
+    <script
+      src="https://kit.fontawesome.com/2a20f3910e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--font-awesome-->
     <script src="js/testimonial.js"></script>
     <title>Adam Durrant Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
@@ -16,7 +17,18 @@
   </head>
 
   <body>
-    <header class="nav"></header>
+    <header class="navigation">
+      <label>
+        <input type="checkbox" />
+        <span class="menu"> <span class="hamburger"></span> </span>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </label>
+    </header>
 
     <section class="intro">
       <div class="container">
@@ -90,14 +102,13 @@
             </div>
             <div class="col col-2">
               <img class="memoji" src="images/memoji.png" />
-              <lottie-player
-                src="https://assets6.lottiefiles.com/packages/lf20_jfchliut.json"
-                background="transparent"
-                speed="1"
-                style="width: 250px; height: 250px"
-                loop
-                autoplay
-              ></lottie-player>
+              <div class="holder">
+                <span class="vertical-text"
+                  >SCROLL<img
+                    class="social-arrow scroll-img"
+                    src="images/arrow-right.svg"
+                /></span>
+              </div>
             </div>
           </div>
         </div>
@@ -156,10 +167,10 @@
       </ul>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
       <div class="container">
         <div class="wrapper">
-          <h2 id="projects" class="opaque-text">Works</h2>
+          <h2 class="opaque-text">Works</h2>
           <h3 class="opaque-text-description">Recent coding projects</h3>
           <div class="project-inner">
             <a class="project-item" href="#">
@@ -238,7 +249,7 @@
               </div>
             </a>
           </div>
-          <div class="project-inner">
+          <div class="project-inner last">
             <a class="project-item" href="#">
               <div class="project-info">
                 <h3 class="project-title">Project 1</h3>
@@ -280,7 +291,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <div class="wrapper">
           <div class="row">
@@ -296,8 +307,7 @@
               <p>
                 I've always been passionate about websites and design so now i'm
                 on a mission to change my career by learning front-end coding &
-                engineering. Please reach out if you have any learning resources
-                to share.
+                engineering.
               </p>
             </div>
             <div class="column-2">
@@ -312,33 +322,72 @@
       </div>
     </section>
 
-    <section class="contact-form">
+    <section id="contact" class="contact-form">
       <div class="container">
         <div class="wrapper">
-          <h2 class="opaque-text">Contact</h2>
-          <h3 class="opaque-text-description">Reach out to me</h3>
-          <form action="https://formspree.io/f/xlevwzjl" method="POST">
-            <input
-              type="text"
-              id="name"
-              name="user_name"
-              placeholder="Name.."
-            />
-            <input
-              type="email"
-              id="mail"
-              name="user_mail"
-              placeholder="Email.."
-            />
-            <textarea
-              id="msg"
-              name="user_message"
-              placeholder="Your message.."
-            ></textarea>
-            <button class="form-button" type="submit">Send your message</button>
-          </form>
+          <div class="contact-row">
+            <div class="contact-column-1">
+              <h2 class="opaque-text">Contact</h2>
+              <p>
+                Please reach out to me with any front-end advice particularly if
+                you have any learning resources to share. I'll s
+              </p>
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/adam-durrant/"
+                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/adamddurrant"
+                    ><i class="fab fa-twitter" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/adamddurrant"
+                    ><i class="fab fa-github" aria-hidden="true"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="mailto:hello@adamdurrant.co.uk"
+                    ><i class="fas fa-envelope" aria-hidden="true"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="contact-column-2">
+              <form action="https://formspree.io/f/xlevwzjl" method="POST">
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  placeholder="Name.."
+                />
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_mail"
+                  placeholder="Email.."
+                />
+                <textarea
+                  id="msg"
+                  name="user_message"
+                  placeholder="Your message.."
+                ></textarea>
+                <div class="social-item">
+                  <button class="form-button item-link" type="submit">
+                    Send your message<img
+                      class="social-arrow"
+                      src="images/arrow-right.svg"
+                    />
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <script src="/index.js"></script>
   </body>
 </html>
