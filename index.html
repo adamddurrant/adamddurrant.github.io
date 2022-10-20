@@ -9,9 +9,10 @@
     <!-- keep page out of search engines -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- lottie animation -->
-
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="js/testimonial.js"></script>
+    <title>Adam Durrant Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- main styles -->
   </head>
 
   <body>
@@ -79,7 +80,7 @@
                     </a>
                   </div>
                   <div class="social-item">
-                    <a class="item-link" href="#"
+                    <a class="item-link" href="#projects"
                       ><span>Projects</span>
                       <img class="social-arrow" src="images/arrow-right.svg" />
                     </a>
@@ -130,7 +131,7 @@
               <img
                 src="images/icons/javascript.svg"
                 alt="Javascript logo"
-              />JavaScript<br /><span class="score">3/10</span>
+              />JS<br /><span class="score">3/10</span>
             </li>
             <li>
               <img
@@ -143,12 +144,6 @@
                 src="images/icons/react.svg"
                 alt="React logo"
               />React<br /><span class="score">2/10</span>
-            </li>
-            <li>
-              <img
-                src="images/icons/accessibility.svg"
-                alt="Accessibility logo"
-              />Accessibility<br /><span class="score">5/10</span>
             </li>
             <li>
               <img
@@ -170,26 +165,174 @@
     <section class="projects">
       <div class="container">
         <div class="wrapper">
-          <h2 class="opaque-text">Works</h2>
-          <h3 class="opaque-text-description">Selected coding projects</h3>
-          <div class="project-grid">
-            <div class="col proj-col">
-              <h3 class="project-title">Project 1</h3>
-              <p class="project-description">
-                This is a new project where I built all these things, check it
-                out.
+          <h2 id="projects" class="opaque-text">Works</h2>
+          <h3 class="opaque-text-description">Recent coding projects</h3>
+          <div class="project-inner">
+            <a class="project-item" href="#">
+              <div class="project-info">
+                <h3 class="project-title">Project 1</h3>
+                <p class="project-description">
+                  This is a new project where I built all these things, check it
+                  out.
+                </p>
+                <ul class="skills skills-used">
+                  <li>
+                    <img
+                      src="images/icons/html.svg"
+                      alt="HTML5 logo"
+                    />HTML5<br /><span class="score">9/10</span>
+                  </li>
+                  <li>
+                    <img
+                      src="images/icons/css.svg"
+                      alt="CSS3 logo"
+                    />CSS3<br /><span class="score">8/10</span>
+                  </li>
+                  <li>
+                    <img
+                      src="images/icons/sass.svg"
+                      alt="Sass logo"
+                    />Sass<br /><span class="score">5/10</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="project-image">
+                <img
+                  style="width: 100%"
+                  class="memoji"
+                  src="https://via.placeholder.com/550x450"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="project-inner">
+            <a class="project-item" href="#">
+              <div class="project-info">
+                <h3 class="project-title">Project 1</h3>
+                <p class="project-description">
+                  This is a new project where I built all these things, check it
+                  out.
+                </p>
+                <ul class="skills skills-used">
+                  <li>
+                    <img
+                      src="images/icons/html.svg"
+                      alt="HTML5 logo"
+                    />HTML5<br /><span class="score">9/10</span>
+                  </li>
+                  <li>
+                    <img
+                      src="images/icons/css.svg"
+                      alt="CSS3 logo"
+                    />CSS3<br /><span class="score">8/10</span>
+                  </li>
+                  <li>
+                    <img
+                      src="images/icons/sass.svg"
+                      alt="Sass logo"
+                    />Sass<br /><span class="score">5/10</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="project-image">
+                <img
+                  style="width: 100%"
+                  class="memoji"
+                  src="https://via.placeholder.com/550x450"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="project-inner">
+            <a class="project-item" href="#">
+              <div class="project-info">
+                <h3 class="project-title">Project 1</h3>
+                <p class="project-description">
+                  This is a new project where I built all these things, check it
+                  out.
+                </p>
+                <ul class="skills skills-used">
+                  <li>
+                    <img
+                      src="images/icons/html.svg"
+                      alt="HTML5 logo"
+                    />HTML5<br /><span class="score">9/10</span>
+                  </li>
+                  <li>
+                    <img
+                      src="images/icons/css.svg"
+                      alt="CSS3 logo"
+                    />CSS3<br /><span class="score">8/10</span>
+                  </li>
+                  <li>
+                    <img
+                      src="images/icons/sass.svg"
+                      alt="Sass logo"
+                    />Sass<br /><span class="score">5/10</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="project-image">
+                <img
+                  style="width: 100%"
+                  class="memoji"
+                  src="https://via.placeholder.com/550x450"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="wrapper">
+          <div class="row">
+            <div class="column-1">
+              <h2 class="opaque-text">About</h2>
+              <h3 class="opaque-text-description">Some words about me</h3>
+              <p>
+                For almost a decade I have been working and learning in the
+                digital marketing industry as an SEO specialist. In that time
+                i've learned a lot about the web and about business from working
+                with startups, SMEs and big corporations.
               </p>
-              <a class="project-link" href="#">View Project</a>
+              <p>
+                I've always been passionate about websites and design so now i'm
+                on a mission to change my career by learning front-end coding &
+                engineering. Please reach out if you have any learning resources
+                to share.
+              </p>
             </div>
-            <div class="col proj-col">
-              <h3 class="project-title">Project 2</h3>
-              <p class="project-description">
-                This is a new project where I built all these things, check it
-                out.
-              </p>
-              <a class="project-link" href="#">View Project</a>
+            <div class="column-2">
+              <img
+                class="memoji memoji-idea-2"
+                src="/adamddurrant.github.io/images/memoji-idea-2.png"
+                alt="memoji of adam having an idea"
+              />
             </div>
           </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <div class="container">
+        <div class="wrapper">
+          <h2 class="opaque-text">Contact</h2>
+          <h3 class="opaque-text-description">Reach out to me</h3>
+          <form action="form.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_mail" />
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+            <button type="submit">Send your message</button>
+          </form>
         </div>
       </div>
     </section>

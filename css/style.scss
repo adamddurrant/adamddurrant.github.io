@@ -1,8 +1,41 @@
 /* imports */
 @import url("https://fonts.googleapis.com/css?family=Vollkorn&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
 /* mixins */
+@mixin flex($direction, $background) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: $direction;
+  background: $background;
+}
+
+@mixin intro-grid {
+  display: grid;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  grid-template-columns: 1fr 0.7fr;
+  grid-template-rows: auto;
+}
+
+@mixin headings {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @content;
+  }
+}
+
 /* variables */
+$primary-button: rgb(0, 0, 0);
+$body-font: 15px;
+
 /* video */
 video {
   width: 100%;
@@ -10,12 +43,8 @@ video {
 }
 
 /* main styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+
+@include headings {
   font-family: "Vollkorn";
   font-style: normal;
   font-weight: normal;
@@ -25,8 +54,10 @@ h6 {
 
 body {
   margin: 0;
-  background-color: white;
-  background-image: radial-gradient(circle farthest-corner at 100% 0%, #00754b, transparent 31%), radial-gradient(circle farthest-corner at 75% 90%, #1ed291, transparent 53%);
+  background-image: url("/adamddurrant.github.io/images/bg-test.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .nav {
@@ -34,11 +65,7 @@ body {
 }
 
 .intro-grid {
-  display: grid;
-  width: 100%;
-  color: rgb(0, 0, 0);
-  grid-template-columns: 1fr 0.7fr;
-  grid-template-rows: auto;
+  @include intro-grid;
 }
 
 .intro-sub {
@@ -48,11 +75,22 @@ body {
 
 .skills {
   font-family: "Work Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 0px auto 0px auto;
   padding: 20px 0;
+  max-width: 900px;
+}
+
+.skills-used {
+  justify-content: left;
+  margin: 0px;
 }
 
 .score {
@@ -62,19 +100,28 @@ body {
 
 .skills li {
   list-style: none;
-  width: 130px;
+  width: 60px;
   margin: 0 20px;
   text-align: center;
   padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-size: 1rem;
 }
 
 .skills li img {
-  width: 40px;
+  height: 40px;
+  filter: grayscale(1);
   margin-bottom: 5px;
 }
 
@@ -94,8 +141,11 @@ body {
   margin-bottom: 5px;
 }
 
-.col {
+.wrapper {
   padding: 20px;
+}
+
+.col {
   margin: auto;
 }
 
@@ -103,13 +153,31 @@ body {
   display: block;
   margin: auto;
   padding: 2%;
-  max-width: 1000px;
+  max-width: 900px;
 }
 
 h1 {
   font-size: 80px;
   font-weight: 500;
   margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+}
+
+.column-1 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
 }
 
 .social-item {
@@ -132,7 +200,8 @@ h1 {
 .social-item:hover > .item-link > .social-arrow {
   transition: 0.3s all;
   transform: translate3d(10px, 0px, 0px) rotate(45deg);
-  filter: invert(58%) sepia(91%) saturate(398%) hue-rotate(107deg) brightness(99%) contrast(85%);
+  filter: invert(58%) sepia(91%) saturate(398%) hue-rotate(107deg)
+    brightness(99%) contrast(85%); // svg color change on hover
 }
 
 .social-item:hover {
@@ -151,16 +220,6 @@ h1 {
   width: 100%;
 }
 
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-  background: lightblue;
-}
-
 p {
   font-size: 17px;
   line-height: 1.4;
@@ -168,10 +227,17 @@ p {
   font-family: "Work Sans", sans-serif;
 }
 
+form {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 a:-webkit-any-link {
   color: black;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 .item-link {
@@ -188,56 +254,37 @@ a:-webkit-any-link {
   transition: 0.2s;
 }
 
+// name underline
 .name {
   position: relative;
-}
-.name::after {
-  content: "";
-  position: absolute;
-  bottom: -0.125rem;
-  left: -0.5rem;
-  right: -0.5rem;
-  height: 1.1rem;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.name:hover::after {
-  background-image: url("images/underline-green.svg");
-  -webkit-animation: fadeIn 0.5s;
-          animation: fadeIn 0.5s;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 1.1rem;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
-.project-grid {
-  display: grid;
-  width: 100%;
-  color: rgb(0, 0, 0);
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-}
-
-.proj-col {
-  border: 3px solid #00754b;
-  padding: 10%;
-  border-radius: 10px;
+// name underline reveal on hover
+.name:hover {
+  &::after {
+    background-image: url("/adamddurrant.github.io/images/underline-green.svg");
+    animation: fadeIn 0.5s;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .projects {
@@ -245,12 +292,48 @@ a:-webkit-any-link {
   width: 100%;
 }
 
+.project-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.project-info,
+.project-image {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.project-image {
+  align-items: center;
+}
+
+.project-inner {
+  display: block;
+  border: 1px solid #00754b;
+  transition: ease 0.2s;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.project-inner:hover {
+  transition: 0.5s all;
+  transform: translateY(-10px);
+}
+
 .memoji {
   max-width: 100%;
 }
 
-a.proj-col * {
-  text-decoration: none;
+.memoji-idea-2 {
+  width: 80%;
+  margin: auto;
 }
 
 .project-title {
@@ -264,6 +347,7 @@ a.proj-col * {
   opacity: 10%;
   font-size: 100px;
   margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 .opaque-text-description {
@@ -290,6 +374,7 @@ lottie-player {
   justify-content: flex-end;
 }
 
+// text circle animation
 #circle {
   position: absolute;
   z-index: -1;
@@ -314,13 +399,26 @@ lottie-player {
   top: 0;
   width: 100%;
   height: 540px;
+
   -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
   animation-name: rotate;
   -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  -o-animation-duration: 5s;
   animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
   animation-timing-function: linear;
 }
 
@@ -332,6 +430,30 @@ lottie-player {
     -webkit-transform: rotate(0);
   }
 }
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0);
+  }
+}
+@-ms-keyframes rotate {
+  from {
+    -ms-transform: rotate(360deg);
+  }
+  to {
+    -ms-transform: rotate(0);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotate(360deg);
+  }
+  to {
+    -o-transform: rotate(0);
+  }
+}
 @keyframes rotate {
   from {
     transform: rotate(360deg);
@@ -340,26 +462,32 @@ lottie-player {
     transform: rotate(0);
   }
 }
+
 /* media queries */
+
 @media only screen and (max-width: 600px) {
+  // mobile
   .social-item {
     margin-right: 20px;
   }
+
+  .row {
+    flex-direction: column;
+  }
+
   .intro-grid {
     grid-template-columns: 1fr;
   }
-  .project-grid {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-  }
 }
+
 @media screen and (min-width: 1600px) {
   lottie-player {
     right: 200;
   }
 }
+
 @media screen and (min-width: 1750px) {
   lottie-player {
     right: 300;
   }
-}/*# sourceMappingURL=style.css.map */
+}
