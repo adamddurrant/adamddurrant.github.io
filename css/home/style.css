@@ -51,7 +51,7 @@ section {
 }
 
 .intro {
-  background-image: url(/adamddurrant.github.io/images/home/bg-1.svg);
+  background-image: url(/images/home/bg-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -59,21 +59,21 @@ section {
 }
 
 .projects {
-  background-image: url(/adamddurrant.github.io/images/home/bg-2.svg);
+  background-image: url(/images/home/bg-2.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 95% 95%;
 }
 
 .about {
-  background-image: url(/adamddurrant.github.io/images/home/bg-1.svg);
+  background-image: url(/images/home/bg-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 95% 95%;
 }
 
 .contact-form {
-  background-image: url(/adamddurrant.github.io/images/home/bg-1.svg);
+  background-image: url(/images/home/bg-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 15% 15%;
