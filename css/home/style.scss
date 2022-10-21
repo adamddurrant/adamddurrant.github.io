@@ -56,35 +56,53 @@ body {
   margin: 0;
 }
 
+footer {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  border-top: 1px solid black;
+  margin: 0 auto;
+  margin-top: 20vh;
+  bottom: 0px;
+  padding: 1px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 1.6rem;
+}
+
+footer > p {
+  font-size: 14px;
+}
+
 section {
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
 
 .intro {
-  background-image: url(../images/bg-1.svg);
+  background-image: url(/adamddurrant.github.io/images/home/bg-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 95% 95%;
+  background-position: top;
   padding-top: 5vh;
 }
 
 .projects {
-  background-image: url(../images/bg-2.svg);
+  background-image: url(/adamddurrant.github.io/images/home/bg-2.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 95% 95%;
 }
 
 .about {
-  background-image: url(../images/bg-1.svg);
+  background-image: url(/adamddurrant.github.io/images/home/bg-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 95% 95%;
 }
 
 .contact-form {
-  background-image: url(../images/bg-1.svg);
+  background-image: url(/adamddurrant.github.io/images/home/bg-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 15% 15%;
@@ -133,32 +151,34 @@ body {
 //nav
 
 label .menu {
-  position: fixed;
-  right: -100px;
-  top: -100px;
+  position: absolute;
+  right: 0;
+  top: -130px;
+  overflow: hidden;
+  overflow-x: hidden;
   z-index: 100;
-  width: 200px;
+  width: 85px;
   height: 200px;
   background: #1ed291;
-  border-radius: 50% 50% 50% 50%;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  border-radius: 0 0 0 75px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   box-shadow: 0 0 0 0 #1ed291, 0 0 0 0 #1ed291;
   cursor: pointer;
 }
 
 label .hamburger {
   position: absolute;
-  top: 135px;
-  left: 50px;
+  top: 161px;
+  left: 38px;
   width: 30px;
   height: 2px;
   background: #000000;
   display: block;
   -webkit-transform-origin: center;
   transform-origin: center;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 label .hamburger:after,
@@ -228,7 +248,6 @@ label ul {
   opacity: 0;
   -webkit-transition: 0.15s 0s ease-in-out;
   transition: 0.15s 0s ease-in-out;
-  transition-delay: 300ms;
 }
 
 label a {
@@ -474,7 +493,7 @@ a:-webkit-any-link {
 // name underline reveal on hover
 .name:hover {
   &::after {
-    background-image: url("/adamddurrant.github.io/images/underline-green.svg");
+    background-image: url("../images/home/underline-green.svg");
     animation: fadeIn 0.5s;
     @keyframes fadeIn {
       0% {
@@ -508,6 +527,7 @@ a:-webkit-any-link {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  margin-right: 20px;
 }
 
 .project-image {
@@ -516,7 +536,7 @@ a:-webkit-any-link {
 
 .project-inner {
   display: block;
-  border: 1px solid #00754b;
+  border: 1px solid #000000;
   transition: ease 0.2s;
   margin-bottom: 40px;
   border-radius: 10px;
@@ -562,6 +582,7 @@ a:-webkit-any-link {
 
 .vertical-text {
   display: flex;
+  font-family: "Work Sans", sans-serif;
   transform: rotate(90deg);
   font-size: 12px;
   align-content: center;
@@ -702,18 +723,24 @@ a:-webkit-any-link {
 
   // text circle animation
   #circle {
-    position: absolute;
-    z-index: -1;
-    letter-spacing: 3px;
-    top: -65px;
-    left: 25px;
-    width: 130%;
-    padding-bottom: 125%;
-    overflow: hidden;
+    display: none;
+  }
+
+  .opaque-text {
+    font-size: 80px;
+  }
+
+  .project-item {
+    flex-direction: column;
   }
 
   .vertical-text {
     transform: rotate(90deg) translate(-150px, -50%);
+  }
+
+  .project-info,
+  .project-image {
+    margin-right: 0px;
   }
 
   .intro {
