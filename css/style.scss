@@ -125,10 +125,15 @@ textarea {
   font-size: 15px;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 //nav
 
 label .menu {
-  position: absolute;
+  position: fixed;
   right: -100px;
   top: -100px;
   z-index: 100;
@@ -215,6 +220,7 @@ label input:checked + .menu + ul {
 label ul {
   z-index: 200;
   position: absolute;
+  padding: 0px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
