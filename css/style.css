@@ -191,7 +191,8 @@ label ul {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  transition: 0.25s 0s ease-in-out;
+  transition: 0.15s 0s ease-in-out;
+  transition-delay: 300ms;
 }
 
 label a {
@@ -609,5 +610,34 @@ a:-webkit-any-link {
   }
   .intro-grid {
     grid-template-columns: 1fr;
+  }
+  #circle {
+    position: absolute;
+    z-index: -1;
+    letter-spacing: 3px;
+    top: -65px;
+    left: 25px;
+    width: 130%;
+    padding-bottom: 125%;
+    overflow: hidden;
+  }
+  .vertical-text {
+    transform: rotate(90deg) translate(-150px, -50%);
+  }
+  .intro {
+    background-size: cover;
+    background-position: top center;
+  }
+  .projects {
+    background-size: cover;
+    background-position: top center;
+  }
+  .about {
+    background-size: cover;
+    background-position: top center;
+  }
+  .contact-form {
+    background-size: cover;
+    background-position: top center;
   }
 }/*# sourceMappingURL=style.css.map */

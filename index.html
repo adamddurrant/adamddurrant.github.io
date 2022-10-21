@@ -14,18 +14,29 @@
     <title>Adam Durrant Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- main styles -->
+    <script>
+      // menu close on click
+      function toggleOff() {
+        let toggleButton = document.getElementById("menu-box");
+        if (toggleButton.checked) {
+          toggleButton.checked = false;
+        } else {
+          toggleButton.checked = true;
+        }
+      }
+    </script>
   </head>
 
   <body>
     <header class="navigation">
       <label>
-        <input type="checkbox" />
+        <input id="menu-box" type="checkbox" />
         <span class="menu"> <span class="hamburger"></span> </span>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/#projects">Projects</a></li>
-          <li><a href="/#about">About</a></li>
-          <li><a href="/#contact">Contact</a></li>
+          <li><a onclick="toggleOff()" href="/">Home</a></li>
+          <li><a onclick="toggleOff()" href="#projects">Projects</a></li>
+          <li><a onclick="toggleOff()" href="#about">About</a></li>
+          <li><a onclick="toggleOff()" href="#contact">Contact</a></li>
         </ul>
       </label>
     </header>
@@ -330,7 +341,7 @@
               <h2 class="opaque-text">Contact</h2>
               <p>
                 Please reach out to me with any front-end advice particularly if
-                you have any learning resources to share. I'll s
+                you have any learning resources to share, i'll love you forever.
               </p>
               <ul class="social-icons">
                 <li>
@@ -362,17 +373,20 @@
                   id="name"
                   name="user_name"
                   placeholder="Name.."
+                  required
                 />
                 <input
                   type="email"
                   id="mail"
                   name="user_mail"
                   placeholder="Email.."
+                  required
                 />
                 <textarea
                   id="msg"
                   name="user_message"
                   placeholder="Your message.."
+                  required
                 ></textarea>
                 <div class="social-item">
                   <button class="form-button item-link" type="submit">
@@ -388,6 +402,5 @@
         </div>
       </div>
     </section>
-    <script src="/index.js"></script>
   </body>
 </html>
