@@ -763,3 +763,13 @@ a:-webkit-any-link {
     background-position: top center;
   }
 }
+
+@media (min-width: 961px) {
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  // tablet portrait
+  .skills li {
+    width: 90px;
+  }
+}

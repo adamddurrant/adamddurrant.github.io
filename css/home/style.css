@@ -670,4 +670,9 @@ a:-webkit-any-link {
     background-size: cover;
     background-position: top center;
   }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills li {
+    width: 90px;
+  }
 }/*# sourceMappingURL=style.css.map */
