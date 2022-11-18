@@ -1,6 +1,6 @@
 /* imports */
-@import url("https://fonts.googleapis.com/css?family=Vollkorn&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
 /* mixins */
 @mixin flex($direction, $background) {
@@ -45,7 +45,7 @@ video {
 /* main styles */
 
 @include headings {
-  font-family: "Vollkorn";
+  font-family: 'Vollkorn';
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizelegibility;
@@ -75,8 +75,8 @@ footer > p {
 }
 
 section {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
 }
 
 .intro {
@@ -114,7 +114,7 @@ textarea {
   height: 50px;
   padding: 12px 0px;
   margin: 8px 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   box-sizing: border-box;
   background-color: transparent;
   border: none;
@@ -123,7 +123,7 @@ textarea {
 
 textarea {
   height: 100px;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   margin-bottom: 30px;
 }
 
@@ -135,7 +135,7 @@ textarea {
   text-decoration: none;
   cursor: pointer;
   font-size: 17px;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 ::placeholder {
@@ -185,7 +185,7 @@ label .hamburger:after,
 label .hamburger:before {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   width: 100%;
@@ -195,7 +195,7 @@ label .hamburger:before {
 
 label > ul > li {
   list-style: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px;
 }
 
@@ -266,7 +266,7 @@ label a {
 }
 
 .skills {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,7 +319,7 @@ label a {
 
 .toolkit-heading {
   text-align: center;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .main-underline {
@@ -402,7 +402,7 @@ h1 {
 .social-item {
   margin-right: 30px;
   font-size: 17px;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -443,7 +443,7 @@ p {
   font-size: 17px;
   line-height: 1.4;
   font-weight: normal;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 form {
@@ -478,7 +478,7 @@ a:-webkit-any-link {
   position: relative;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -0.125rem;
     left: -0.5rem;
@@ -493,7 +493,7 @@ a:-webkit-any-link {
 // name underline reveal on hover
 .name:hover {
   &::after {
-    background-image: url("../images/home/underline-green.svg");
+    background-image: url('../images/home/underline-green.svg');
     animation: fadeIn 0.5s;
     @keyframes fadeIn {
       0% {
@@ -521,13 +521,18 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
+
 .project-info,
 .project-image {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-basis: 100%;
   flex: 1;
-  margin-right: 20px;
+}
+
+.project-info {
+    padding-right: 6%;
 }
 
 .project-image {
@@ -561,7 +566,7 @@ a:-webkit-any-link {
 }
 
 .project-title {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0 0 20px 0;
   color: #00754b;
 }
@@ -575,14 +580,14 @@ a:-webkit-any-link {
 }
 
 .opaque-text-description {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   margin-top: -20px;
   margin-bottom: 30px;
 }
 
 .vertical-text {
   display: flex;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   transform: rotate(90deg);
   font-size: 12px;
   align-content: center;
@@ -612,7 +617,7 @@ a:-webkit-any-link {
   position: absolute;
   z-index: -1;
   letter-spacing: 3px;
-  top: -65px;
+  top: -35px;
   left: 100px;
   width: 90%;
   padding-bottom: 125%;
@@ -620,7 +625,7 @@ a:-webkit-any-link {
 }
 
 #circle text {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 10px;
   font-weight: 200;
   text-transform: uppercase;

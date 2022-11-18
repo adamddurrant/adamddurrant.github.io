@@ -46,8 +46,8 @@ footer > p {
 }
 
 section {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
 }
 
 .intro {
@@ -488,9 +488,13 @@ a:-webkit-any-link {
 .project-image {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   flex-basis: 100%;
   flex: 1;
-  margin-right: 20px;
+}
+
+.project-info {
+  padding-right: 6%;
 }
 
 .project-image {
@@ -524,7 +528,7 @@ a:-webkit-any-link {
 }
 
 .project-title {
-  font-size: 50px;
+  font-size: 40px;
   margin: 0 0 20px 0;
   color: #00754b;
 }
@@ -574,7 +578,7 @@ a:-webkit-any-link {
   position: absolute;
   z-index: -1;
   letter-spacing: 3px;
-  top: -65px;
+  top: -35px;
   left: 100px;
   width: 90%;
   padding-bottom: 125%;
