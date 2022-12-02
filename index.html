@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1. user-scalable=0" />
     <meta name="robots" content="noindex" />
     <script
       src="https://kit.fontawesome.com/2a20f3910e.js"
@@ -14,65 +14,34 @@
   </head>
 
   <body>
-    <header class="navigation">
-      <label>
-        <input id="menu-box" type="checkbox" />
-        <span class="menu"> <span class="hamburger"></span> </span>
-        <ul>
-          <li><a onclick="toggleOff()" href="/">Home</a></li>
-          <li><a onclick="toggleOff()" href="#projects">Projects</a></li>
-          <li><a onclick="toggleOff()" href="#about">About</a></li>
-          <li><a onclick="toggleOff()" href="#contact">Contact</a></li>
-        </ul>
-      </label>
-    </header>
+    <div class="page-wrapper">
 
+   <!--test-->
+   <header class="header">
+    <a href="" class="logo">A.Durrant</a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="/">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="contact-button">
+      <a href="#contact">Reach out</a>
+    </div>
+  </header>
+  <!--test-->
     <section class="intro">
       <div class="container">
         <div class="wrapper">
           <div class="intro-grid">
             <div class="col col-1">
               <div class="first-col-content">
-                <h1 class="main-heading">
-                  Hi, I'm <span class="name">Adam</span>
+                <h1>
+                  Hi, I'm Adam.</br>
+                  <span class="hero-text">An ex-SEO specialist & aspiring <img src="images/home/meta-icon.png"> certified front-end developer.</span>
                 </h1>
-                <p class="intro-sub">
-                  I'm an SEO specialist retraining to pursue a career in
-                  front-end web development. I'm passionate about the web and I
-                  love learning and creating.
-                </p>
-
-                <div id="circle">
-                  <svg
-                    version="1.1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    width="100px"
-                    height="100px"
-                    viewBox="0 0 500 500"
-                    enable-background="new 0 0 200 200"
-                    xml:space="preserve"
-                  >
-                    <defs>
-                      <path
-                        id="circlePath"
-                        d=" M 250, 250 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
-                      />
-                    </defs>
-                    <circle cx="150" cy="100" r="75" fill="none" />
-                    <g>
-                      <use xlink:href="#circlePath" fill="none" />
-                      <text fill="#00754B">
-                        <textPath xlink:href="#circlePath">
-                          SEO to front-end&nbsp;&nbsp; · &nbsp;&nbsp;SEO to
-                          front-end&nbsp;&nbsp; · &nbsp;&nbsp;
-                        </textPath>
-                      </text>
-                    </g>
-                  </svg>
-                </div>
                 <div class="socials">
                   <div class="social-item">
                     <a
@@ -107,20 +76,13 @@
               </div>
             </div>
             <div class="col col-2">
-              <img class="memoji" src="images/home/memoji.png" />
-              <div class="holder">
-                <span class="vertical-text"
-                  >SCROLL<img
-                    class="social-arrow scroll-img"
-                    src="images/home/arrow-right.svg"
-                /></span>
-              </div>
+              <img class="profile" src="images/home/profile-pic.png" />
             </div>
           </div>
         </div>
       </div>
 
-      <h3 class="toolkit-heading">What I'm Learning</h3>
+      <h3 class="toolkit-heading">My learning stack</h3>
       <ul class="skills">
         <li>
           <img
@@ -387,5 +349,6 @@
     <footer>
       <p>Designed & Developed by Adam Durrant ✌️</p>
     </footer>
+  </div>
   </body>
 </html>
