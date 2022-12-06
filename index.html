@@ -11,27 +11,28 @@
     <title>Adam Durrant Portfolio</title>
     <link rel="stylesheet" href="css/home/style.css" />
     <script src="js/home/menu-toggle.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
   </head>
 
   <body>
     <div class="page-wrapper">
-
-   <!--test-->
+        <!--menu-->
    <header class="header">
     <a href="" class="logo">A.Durrant</a>
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="/">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <li><a id="nav-item" href="/">Home</a></li>
+          <li><a id="nav-item" href="#projects">Projects</a></li>
+          <li><a id="nav-item"  href="#about">About</a></li>
+          <li><a id="nav-item"  href="#contact">Contact</a></li>
     </ul>
     <div class="contact-button">
       <a href="#contact">Reach out</a>
     </div>
   </header>
-  <!--test-->
+
+    <!--hero-->
     <section class="intro">
       <div class="container">
         <div class="wrapper">
@@ -82,272 +83,458 @@
         </div>
       </div>
 
-      <h3 class="toolkit-heading">My learning stack</h3>
+      <h3 class="toolkit-heading">Front-end stack</h3>
       <ul class="skills">
         <li>
           <img
             src="images/home/icons/html.svg"
             alt="HTML5 logo"
-          />HTML5<br /><span class="score">9/10</span>
+          />HTML5
         </li>
         <li>
-          <img src="images/home/icons/css.svg" alt="CSS3 logo" />CSS3<br /><span
-            class="score"
-            >8/10</span
-          >
+          <img src="images/home/icons/css.svg" alt="CSS3 logo" />CSS3
         </li>
         <li>
           <img
             src="images/home/icons/sass.svg"
             alt="Sass logo"
-          />Sass<br /><span class="score">5/10</span>
+          />Sass
         </li>
         <li>
           <img
             src="images/home/icons/javascript.svg"
             alt="Javascript logo"
-          />JS<br /><span class="score">3/10</span>
+          />JS
         </li>
         <li>
           <img
             src="images/home/icons/jquery.svg"
             alt="Jquery logo"
-          />jQuery<br /><span class="score">2/10</span>
+          />jQuery
         </li>
         <li>
           <img
             src="images/home/icons/react.svg"
             alt="React logo"
-          />React<br /><span class="score">2/10</span>
+          />React
         </li>
         <li>
           <img
             src="images/home/icons/github.svg"
             alt="Github logo"
-          />Github<br /><span class="score">5/10</span>
+          />Github
         </li>
         <li>
           <img
-            src="images/home/icons/figma.svg"
-            alt="Figmalogo"
-          />Figma<br /><span class="score">8/10</span>
+            src="images/home/icons/firebase.svg"
+            alt="Firebase logo"
+          />Firebase
         </li>
       </ul>
     </section>
 
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="wrapper">
-          <h2 class="opaque-text">Works</h2>
-          <h3 class="opaque-text-description">Recent coding projects</h3>
-          <div class="project-inner">
-            <a class="project-item" href="/projects/shopping-list">
-              <div class="project-info">
-                <h3 class="project-title">Shopping List CRUD</h3>
-                <p class="project-description">
-                  A real-time shopping list CRUD application built with HTML,
-                  CSS, vanilla Javascript and integrated with Firebase database.
-                </p>
-                <ul class="skills skills-used">
-                  <li>
-                    <img
-                      src="images/home/icons/html.svg"
-                      alt="HTML5 logo"
-                    />HTML5
-                  </li>
-                  <li>
-                    <img src="images/home/icons/css.svg" alt="CSS3 logo" />CSS3
-                  </li>
-                  <li>
-                    <img
-                      src="images/home/icons/javascript.svg"
-                      alt="JS logo"
-                    />JS
-                  </li>
-                </ul>
-              </div>
-              <div class="project-image">
-                <img
-                  style="width: 100%"
-                  class="project-image"
-                  src="/images/home/shopping-list-project.png"
-                />
-              </div>
-            </a>
-          </div>
-
-          <div class="project-inner">
-            <a class="project-item" href="#">
-              <div class="project-info">
-                <h3 class="project-title">Project 1</h3>
-                <p class="project-description">
-                  This is a new project where I built all these things, check it
-                  out.
-                </p>
-                <ul class="skills skills-used">
-                  <li>
-                    <img
-                      src="images/home/icons/html.svg"
-                      alt="HTML5 logo"
-                    />HTML5
-                  </li>
-                  <li>
-                    <img src="images/home/icons/css.svg" alt="CSS3 logo" />CSS3
-                  </li>
-                  <li>
-                    <img src="images/home/icons/sass.svg" alt="Sass logo" />Sass
-                  </li>
-                </ul>
-              </div>
-              <div class="project-image">
-                <img
-                  style="width: 100%"
-                  class="memoji"
-                  src="https://via.placeholder.com/550x450"
-                />
-              </div>
-            </a>
-          </div>
-          <div class="project-inner last">
-            <a class="project-item" href="#">
-              <div class="project-info">
-                <h3 class="project-title">Project 1</h3>
-                <p class="project-description">
-                  This is a new project where I built all these things, check it
-                  out.
-                </p>
-                <ul class="skills skills-used">
-                  <li>
-                    <img
-                      src="images/home/icons/html.svg"
-                      alt="HTML5 logo"
-                    />HTML5
-                  </li>
-                  <li>
-                    <img src="images/home/icons/css.svg" alt="CSS3 logo" />CSS3
-                  </li>
-                  <li>
-                    <img src="images/home/icons/sass.svg" alt="Sass logo" />Sass
-                  </li>
-                </ul>
-              </div>
-              <div class="project-image">
-                <img
-                  style="width: 100%"
-                  class="memoji"
-                  src="https://via.placeholder.com/550x450"
-                />
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
+<!--about-->
     <section id="about" class="about">
       <div class="container">
-        <div class="wrapper">
-          <div class="row">
-            <div class="column-1">
-              <h2 class="opaque-text">About</h2>
-              <h3 class="opaque-text-description">Some words about me</h3>
-              <p>
-                For almost a decade I have been working and learning in the
-                digital marketing industry as an SEO specialist. In that time
-                I've worked with startups, SMEs and big corporations like Mars,
-                Interflora and Geotab.
-              </p>
-              <p>
-                I've always been passionate about websites and design so now I'm
-                on a mission to change my career and learn front-end
-                development.
-              </p>
-            </div>
-            <div class="column-2">
-              <img
-                class="memoji memoji-idea-2"
-                src="images/home/memoji-bulb.png"
-                alt="memoji of adam having an idea"
-              />
-            </div>
+      <div class="content-section">
+        <div class="left-grid-column">
+          <div class="sub-heading">About
+    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
           </div>
         </div>
-      </div>
+          <div class="right-grid-column">
+            <p>I have been working and learning in the digital marketing industry as an SEO specialist for almost a decade. In that time I've worked freelance, in-house and agency-side for startups, SMEs and big corporations like Mars, Interflora and ZOE.</p>
+              <p>
+              I've always been passionate about the web and I thoroughly enjoy working closely with development teams. After lots of deliberation, I'm on a journey to change my career and learn front-end web development. </p>
+              <p>
+              My ambition is to repeat the successes I have achieved in my SEO career and apply the same resilience and determination to a new career path.</p>
+          </div>
+        </div>
+        </div>
     </section>
 
-    <section id="contact" class="contact-form">
+<!--Projects-->
+    <section id="coding-projects" class="coding-projects">
       <div class="container">
-        <div class="wrapper">
-          <div class="contact-row">
-            <div class="contact-column-1">
-              <h2 class="opaque-text">Contact</h2>
-              <h3 class="opaque-text-description">Get in touch with me</h3>
-              <p>
-                Please reach out to me with any front-end advice particularly if
-                you have any learning resources to share, I'll love you forever.
-              </p>
-              <ul class="social-icons">
-                <li>
-                  <a href="https://www.linkedin.com/in/adam-durrant/"
-                    ><i class="fab fa-linkedin-in" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/adamddurrant"
-                    ><i class="fab fa-twitter" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://github.com/adamddurrant"
-                    ><i class="fab fa-github" aria-hidden="true"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="mailto:hello@adamdurrant.co.uk"
-                    ><i class="fas fa-envelope" aria-hidden="true"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-            <div class="contact-column-2">
-              <form action="https://formspree.io/f/xlevwzjl" method="POST">
-                <input
-                  type="text"
-                  id="name"
-                  name="user_name"
-                  placeholder="Name.."
-                  required
-                />
-                <input
-                  type="email"
-                  id="mail"
-                  name="user_mail"
-                  placeholder="Email.."
-                  required
-                />
-                <textarea
-                  id="msg"
-                  name="user_message"
-                  placeholder="Your message.."
-                  required
-                ></textarea>
-                <div class="social-item">
-                  <button class="form-button item-link" type="submit">
-                    Send your message<img
-                      class="social-arrow"
-                      src="images/home/arrow-right.svg"
-                    />
-                  </button>
+      <div class="content-section">
+        <div class="left-grid-column">
+          <div class="sub-heading">Projects
+    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+          </div>
+        </div>
+          <div class="right-grid-column">
+            <div class="project-inner">
+              <a class="project-item" href="/projects/shopping-list">
+                <div class="project-info">
+                  <h3 class="project-title">Shopping List App</h3>
+                  <p class="project-description">
+                    A real-time shopping list CRUD application built with HTML, CSS, vanilla Javascript & Firebase database.
+                  </p>
+                  <ul class="skills-used">
+                    <li>
+                      <img
+                        src="images/home/icons/html.svg"
+                        alt="HTML5 logo"
+                      />
+                    </li>
+                    <li>
+                      <img src="images/home/icons/css.svg" alt="CSS3 logo" />
+                    </li>
+                    <li>
+                      <img
+                        src="images/home/icons/javascript.svg"
+                        alt="JS logo"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="images/home/icons/firebase.svg"
+                        alt="Firebase logo"
+                      />
+                    </li>
+                  </ul>
                 </div>
-              </form>
+                <div class="project-image">
+                  <img
+                    class="project-image"
+                    src="/images/home/shopping-list-project.png"
+                  />
+                </div>
+              </a>
+              <a class="project-item" href="/projects/shopping-list">
+                <div class="project-info">
+                  <h3 class="project-title">Shopping List App</h3>
+                  <p class="project-description">
+                    A real-time shopping list CRUD application built with HTML, CSS, vanilla Javascript & Firebase database.
+                  </p>
+                  <ul class="skills-used">
+                    <li>
+                      <img
+                        src="images/home/icons/html.svg"
+                        alt="HTML5 logo"
+                      />
+                    </li>
+                    <li>
+                      <img src="images/home/icons/css.svg" alt="CSS3 logo" />
+                    </li>
+                    <li>
+                      <img
+                        src="images/home/icons/javascript.svg"
+                        alt="JS logo"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="images/home/icons/firebase.svg"
+                        alt="Firebase logo"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-image">
+                  <img
+                    class="project-image"
+                    src="/images/home/shopping-list-project.png"
+                  />
+                </div>
+              </a>
+              <a class="project-item" href="/projects/shopping-list">
+                <div class="project-info">
+                  <h3 class="project-title">Shopping List App</h3>
+                  <p class="project-description">
+                    A real-time shopping list CRUD application built with HTML, CSS, vanilla Javascript & Firebase database.
+                  </p>
+                  <ul class="skills-used">
+                    <li>
+                      <img
+                        src="images/home/icons/html.svg"
+                        alt="HTML5 logo"
+                      />
+                    </li>
+                    <li>
+                      <img src="images/home/icons/css.svg" alt="CSS3 logo" />
+                    </li>
+                    <li>
+                      <img
+                        src="images/home/icons/javascript.svg"
+                        alt="JS logo"
+                      />
+                    </li>
+                    <li>
+                      <img
+                        src="images/home/icons/firebase.svg"
+                        alt="Firebase logo"
+                      />
+                    </li>
+                  </ul>
+                </div>
+                <div class="project-image">
+                  <img
+                    class="project-image"
+                    src="/images/home/shopping-list-project.png"
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>
-      </div>
+        </div>
     </section>
 
+<!--tools-->
+
+<section id="tools" class="tools">
+  <div class="container">
+  <div class="content-section">
+    <div class="left-grid-column">
+      <div class="sub-heading">Tools
+    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+          </div>
+      </div>
+      <div class="right-grid-column">
+        <div class="row">
+          <div class="column">
+              <h2 class="type">Design</h2>
+            </a><p class="paragraph-29 jtitle">Figma, Photoshop, Premiere, XD, Google Optimize, A/B Tasty, VWO</p><h2 class="type bump">Analytics</h2><p class="paragraph-29 jtitle">Datastudio, Google Analytics, Tag Manager, funnel.io, Supermetrics</p><h2 class="type bump">SEO</h2><p class="paragraph-29 jtitle">Ahrefs, SEMrush, Sitebulb, Frase, Screaming Frog, Sistrix, Moz, URL&nbsp;profiler, Search Metrics</p>
+          </div>
+          <div class="column">
+            <h2 class="type">Design</h2>
+            </a><p class="paragraph-29 jtitle">Figma, Photoshop, Premiere, XD, Google Optimize, A/B Tasty, VWO</p><h2 class="type bump">Analytics</h2><p class="paragraph-29 jtitle">Datastudio, Google Analytics, Tag Manager, funnel.io, Supermetrics</p><h2 class="type bump">SEO</h2><p class="paragraph-29 jtitle">Ahrefs, SEMrush, Sitebulb, Frase, Screaming Frog, Sistrix, Moz, URL&nbsp;profiler, Search Metrics</p>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      </section>
+
+<!--Testimonials-->
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+        <div class="content-section">
+          <div class="left-grid-column">
+            <div class="sub-heading">Kind Words
+          <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+                </div>
+            </div>
+            <div class="right-grid-column">
+              
+               <!-- carousel here -->
+               <div data-delay="4000" data-animation="slide" class="slider-long sliderlonglite w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-w-id="fcea9e31-6deb-5b2b-652d-35de4425e501" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" role="region" aria-label="carousel">
+                <div class="mask-long w-slider-mask" id="w-slider-mask-0">
+                   <div class="slide slidelite w-slide" aria-label="1 of 9" role="group" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;">
+                      <div class="slide-wrap slidewraplite">
+                         <div class="quote-text-large quotetextlite">“Adam is a fantastic person to work with. He has extensive knowledge in building high performing websites... From the start, he was very articulate and did a fantastic job presenting a roadmap on how we would work together to improve our site's SEO. He is super patient, knowledgeable, and has excellent client relationship skills.”</div>
+                         <div class="author-wrap">
+                            <div class="avatar-circle"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f70c61af21701467398b113_amir-blackcreek.jpeg" alt="" class="author-image"></div>
+                            <div class="author-content">
+                               <div class="author-name">Amir M.</div>
+                               <div class="testimonial-text">CEO, Blackcreek.io</div>
+                               <a href="https://www.linkedin.com/in/hausofmir/" target="_blank" class="link-block-4 w-inline-block"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png" loading="lazy" height="20" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-500.png 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-800.png 800w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png 2048w" sizes="(max-width: 767px) 18px, (max-width: 991px) 2vw, 18px" alt="" class="linkedinreview"></a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="slide-3 w-slide" aria-label="2 of 9" role="group" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;" aria-hidden="true">
+                      <div class="slide-wrap slidewraplite jo" aria-hidden="true">
+                         <div class="quote-text-large quotetextlite" aria-hidden="true">“Adam is the real deal. From a commercial standpoint, his approach to strategy is thoughtful and rooted in a genuine passion for problem solving. No matter the ask, he always goes above and beyond, comfortable stepping outside of his lane to help where needed. Having him as an extended part of our team has fundamentally shifted my views on embedded consulting.”</div>
+                         <div class="author-wrap" aria-hidden="true">
+                            <div class="author-wrap" aria-hidden="true">
+                               <div class="avatar-circle" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/6044ea9f5bba09bad3e651fd_1579838525131.jpeg" alt="" class="author-image" aria-hidden="true"></div>
+                               <div class="author-content" aria-hidden="true">
+                                  <div class="author-name" aria-hidden="true">Jo Vos</div>
+                                  <div class="testimonial-text" aria-hidden="true">Chief Marketing Officer, imaware™</div>
+                                  <a href="https://www.linkedin.com/in/jovos/" target="_blank" class="link-block-9 w-inline-block" tabindex="-1" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png" loading="lazy" height="20" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-500.png 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-800.png 800w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png 2048w" sizes="(max-width: 767px) 18px, (max-width: 991px) 2vw, 18px" alt="" class="linkedinreview" aria-hidden="true"></a>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="slide w-slide" aria-label="3 of 9" role="group" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;" aria-hidden="true">
+                      <div class="slide-wrap slidewraplite" aria-hidden="true">
+                         <div class="quote-text-large quotetextlite" aria-hidden="true">“Adam made a tremendous difference advancing SEO for Interflora's brands - he possesses a naturally curious mind to deliver measured improvement at pace, with real passion. It was a real pleasure working with Adam. I would have no hesitation in recommending the talent he would bring to organisations big or small.”</div>
+                         <div class="author-wrap" aria-hidden="true">
+                            <div class="avatar-circle" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f70c5d510f59932d5283e2e_ben.freeborn-interflora.jpeg" alt="" class="author-image" aria-hidden="true"></div>
+                            <div class="author-content" aria-hidden="true">
+                               <div class="author-name" aria-hidden="true">Ben Freeborn</div>
+                               <div class="testimonial-text" aria-hidden="true">Head of customer experience, Interflora</div>
+                               <a href="https://www.linkedin.com/in/benfreeborn/" target="_blank" class="link-block-5 w-inline-block" tabindex="-1" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png" loading="lazy" height="20" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-500.png 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-800.png 800w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png 2048w" sizes="(max-width: 767px) 18px, (max-width: 991px) 2vw, 18px" alt="" class="linkedinreview" aria-hidden="true"></a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="slide w-slide" aria-label="4 of 9" role="group" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;" aria-hidden="true">
+                      <div class="slide-wrap slidewraplite" aria-hidden="true">
+                         <div class="quote-text-large quotetextlite" aria-hidden="true">“We asked Adam to carry out an audit of our website to uncover it’s weaknesses and on his findings implement a strategy to grow traffic and revenue. In short we have found Adams advice absolutely invaluable and have absolutely no hesitation in thoroughly recommending his skills.”</div>
+                         <div class="author-wrap" aria-hidden="true">
+                            <div class="avatar-circle" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f70b2a2a85b9206cfd08ee0_simon-porter.jpg" alt="" class="author-image" aria-hidden="true"></div>
+                            <div class="author-content" aria-hidden="true">
+                               <div class="author-name" aria-hidden="true">Simon Porter</div>
+                               <div class="testimonial-text" aria-hidden="true">Director, James Porter &amp;&nbsp;Son</div>
+                               <a href="https://www.linkedin.com/in/simon-porter-3a982b40/" target="_blank" class="link-block-6 w-inline-block" tabindex="-1" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png" loading="lazy" height="20" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-500.png 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-800.png 800w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png 2048w" sizes="(max-width: 767px) 18px, (max-width: 991px) 2vw, 18px" alt="" class="linkedinreview" aria-hidden="true"></a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="slide-2 w-slide" aria-label="5 of 9" role="group" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;" aria-hidden="true">
+                      <div class="slide-wrap slidewraplite" aria-hidden="true">
+                         <div class="quote-text-large quotetextlite" aria-hidden="true">“Adam is quietly confident and for very good reason. He has a passion for his metier and has a definitive grasp of the ever changing face of the digital world. For a tech guy he is also fluent and articulate - you will always leave knowing more than you did when you went in. And it's stuff that you can action.”</div>
+                         <div class="author-wrap" aria-hidden="true">
+                            <div class="avatar-circle" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/62d036f5cbc6a5117f3373dc_1603292012111.jpeg" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/62d036f5cbc6a5117f3373dc_1603292012111-p-500.jpeg 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/62d036f5cbc6a5117f3373dc_1603292012111.jpeg 800w" sizes="(max-width: 479px) 42vw, (max-width: 767px) 14vw, 70px" alt="" class="author-image" aria-hidden="true"></div>
+                            <div class="author-content" aria-hidden="true">
+                               <div class="author-name" aria-hidden="true">Rob Shand</div>
+                               <div class="testimonial-text" aria-hidden="true">Consultant, CEO &amp; Business Leader</div>
+                               <a href="https://www.linkedin.com/in/robshand/" target="_blank" class="link-block-8 w-inline-block" tabindex="-1" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png" loading="lazy" height="20" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-500.png 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-800.png 800w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png 2048w" sizes="(max-width: 767px) 18px, (max-width: 991px) 2vw, 18px" alt="" class="linkedinreview" aria-hidden="true"></a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="slide w-slide" aria-label="6 of 9" role="group" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;" aria-hidden="true">
+                      <div class="slide-wrap slidewraplite" aria-hidden="true">
+                         <div class="quote-text-large quotetextlite" aria-hidden="true">"Adam is a superstar and a total delight to work with. &nbsp;He is trustworthy, eminently likeable, but above all, he is talented, creative and understands the commercial imperative behind what he is being asked to do. He has worked within an agency and in-house, giving him a huge amount of insight and empathy into what businesses are looking for."</div>
+                         <div class="author-wrap" aria-hidden="true">
+                            <div class="avatar-circle" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5fa05a60146d3f02f677de37_wendy.jpg" alt="" class="author-image" aria-hidden="true"></div>
+                            <div class="author-content" aria-hidden="true">
+                               <div class="author-name" aria-hidden="true">Wendy Shand</div>
+                               <div class="testimonial-text" aria-hidden="true">Founder, Tots to Travel</div>
+                               <a href="https://www.linkedin.com/in/wendy-shand-95999525/" target="_blank" class="link-block-7 w-inline-block" tabindex="-1" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png" loading="lazy" height="20" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-500.png 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-800.png 800w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png 2048w" sizes="(max-width: 767px) 18px, (max-width: 991px) 2vw, 18px" alt="" class="linkedinreview" aria-hidden="true"></a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="slide-2 w-slide" aria-label="7 of 9" role="group" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;" aria-hidden="true">
+                      <div class="slide-wrap slidewraplite" aria-hidden="true">
+                         <div class="quote-text-large quotetextlite" aria-hidden="true">“Adam is such a joy to work with. He's a professional whiz, offering clear direction and solid SEO advice. He's also kind, funny and empathetic. He gets into readers heads, and he understands writers and their needs. As a freelancer, I love working with Adam because his stellar communication skills make it easy.</div>
+                         <div class="author-wrap" aria-hidden="true">
+                            <div class="avatar-circle" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/62cf6be8c143746a4aa864de_JHa_iD2J_400x400.jpeg" alt="" class="author-image" aria-hidden="true"></div>
+                            <div class="author-content" aria-hidden="true">
+                               <div class="author-name" aria-hidden="true">Devon Scoble</div>
+                               <div class="testimonial-text" aria-hidden="true">Head Of Content, imaware™</div>
+                               <a href="https://www.linkedin.com/in/devonscoble/" target="_blank" class="link-block-8 w-inline-block" tabindex="-1" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png" loading="lazy" height="20" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-500.png 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-800.png 800w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png 2048w" sizes="(max-width: 767px) 18px, (max-width: 991px) 2vw, 18px" alt="" class="linkedinreview" aria-hidden="true"></a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="slide-2 w-slide" aria-label="8 of 9" role="group" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;" aria-hidden="true">
+                      <div class="slide-wrap slidewraplite" aria-hidden="true">
+                         <div class="quote-text-large quotetextlite" aria-hidden="true">“I worked with Adam and he was right up there with the best SEO specialists I've had the pleasure of working alongside. Not just that but he has a true passion for the area and was constantly introducing me to new bits of tech he'd read about. An absolute top man and true expert in his field”</div>
+                         <div class="author-wrap" aria-hidden="true">
+                            <div class="avatar-circle" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/62cf6b611eea8f0a579a0a3a_1627228131995.jpeg" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/62cf6b611eea8f0a579a0a3a_1627228131995-p-500.jpeg 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/62cf6b611eea8f0a579a0a3a_1627228131995.jpeg 800w" sizes="(max-width: 479px) 42vw, (max-width: 767px) 12vw, 70px" alt="" class="author-image" aria-hidden="true"></div>
+                            <div class="author-content" aria-hidden="true">
+                               <div class="author-name" aria-hidden="true">Andrew Land</div>
+                               <div class="testimonial-text" aria-hidden="true">Senior Email &amp;&nbsp;CRM&nbsp;Manager, Conde Nast</div>
+                               <a href="https://www.linkedin.com/in/andrew-land-982b329/" target="_blank" class="link-block-8 w-inline-block" tabindex="-1" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png" loading="lazy" height="20" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-500.png 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-800.png 800w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png 2048w" sizes="(max-width: 767px) 18px, (max-width: 991px) 2vw, 18px" alt="" class="linkedinreview" aria-hidden="true"></a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="slide-2 w-slide" aria-label="9 of 9" role="group" style="transform: translateX(0px); opacity: 1; transition: transform 500ms ease 0s;" aria-hidden="true">
+                      <div class="slide-wrap slidewraplite" aria-hidden="true">
+                         <div class="quote-text-large quotetextlite" aria-hidden="true">“Working with Adam over the past year or two has been fantastic. We initially started with an overhaul of my existing website to make it more SEO friendly and worked up to redesigning the whole site from the ground up, with Adam taking on design as well as SEO.”</div>
+                         <div class="author-wrap" aria-hidden="true">
+                            <div class="avatar-circle" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f70c673d34719608e8b0185_peter-mason-profile.jpg" alt="" class="author-image" aria-hidden="true"></div>
+                            <div class="author-content" aria-hidden="true">
+                               <div class="author-name" aria-hidden="true">Peter Mason</div>
+                               <div class="testimonial-text" aria-hidden="true">Founder &amp;&nbsp;MD, Peter Mason Photography</div>
+                               <a href="https://www.linkedin.com/in/peter-mason-photography/" target="_blank" class="link-block-8 w-inline-block" tabindex="-1" aria-hidden="true"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png" loading="lazy" height="20" srcset="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-500.png 500w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-800.png 800w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1080.png 1080w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096-p-1600.png 1600w, https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f73b5db3718355b7720594f_606491_linkedin_4096x4096.png 2048w" sizes="(max-width: 767px) 18px, (max-width: 991px) 2vw, 18px" alt="" class="linkedinreview" aria-hidden="true"></a>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                   <div aria-live="off" aria-atomic="true" class="w-slider-aria-label" data-wf-ignore="">Slide 1 of 9.</div>
+                </div>
+                <div class="arrow-left w-slider-arrow-left" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="previous slide" style="display: none;"><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f7088eb74f8e1c2e37bc46e_Arrow%20Left.svg" alt=""></div>
+                <div class="arrow-right w-slider-arrow-right" role="button" tabindex="0" aria-controls="w-slider-mask-0" aria-label="next slide" style=""><img src="https://uploads-ssl.webflow.com/5f7088ea849ec3ea6152d4c4/5f7088eb74f8e1e10f7bc471_Arrow%20Right%20(1).svg" alt=""></div>
+                <div class="slide-nav w-slider-nav w-round">
+                   <div class="w-slider-dot w-active" data-wf-ignore="" aria-label="Show slide 1 of 9" aria-pressed="true" role="button" tabindex="0" style="margin-left: 3px; margin-right: 3px;"></div>
+                   <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 2 of 9" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;"></div>
+                   <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 3 of 9" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;"></div>
+                   <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 4 of 9" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;"></div>
+                   <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 5 of 9" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;"></div>
+                   <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 6 of 9" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;"></div>
+                   <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 7 of 9" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;"></div>
+                   <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 8 of 9" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;"></div>
+                   <div class="w-slider-dot" data-wf-ignore="" aria-label="Show slide 9 of 9" aria-pressed="false" role="button" tabindex="-1" style="margin-left: 3px; margin-right: 3px;"></div>
+                </div>
+             </div>
+              </div>
+              </div>
+            </div>
+            </section>
+
+
+<!--Contact-->
+<section id="contact" class="contact">
+  <div class="container">
+  <div class="content-section">
+    <div class="left-grid-column">
+      <div class="sub-heading">Contact
+    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+          </div>
+      </div>
+      <div class="right-grid-column">
+        <p>
+          I'm no longer available for fully managed SEO services but i'm always happy to help so please reach out, ask questions, say hi and i'll come right back with insight.
+        </p>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.linkedin.com/in/adam-durrant/"
+              ><i class="fab fa-linkedin-in" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/adamddurrant"
+              ><i class="fab fa-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/adamddurrant"
+              ><i class="fab fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:hello@adamdurrant.co.uk"
+              ><i class="fas fa-envelope" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+        <form action="https://formspree.io/f/xlevwzjl" method="POST">
+          <input
+            type="text"
+            id="name"
+            name="user_name"
+            placeholder="Name.."
+            required
+          />
+          <input
+            type="email"
+            id="mail"
+            name="user_mail"
+            placeholder="Email.."
+            required
+          />
+          <textarea
+            id="msg"
+            name="user_message"
+            placeholder="Your message.."
+            required
+          ></textarea>
+          <div class="social-item">
+            <button class="form-button item-link" type="submit">
+              Send your message<img
+                class="social-arrow"
+                src="images/home/arrow-right.svg"
+              />
+            </button>
+          </div>
+        </form>
+        </div>
+        </div>
+      </div>
+      </section>
+
+    <img src="https://assets.website-files.com/63120895f3c1b46487d8ee55/63120895f3c1b443efd8eeab_png2.png" loading="lazy" class="image-background position-absolute footer">
     <footer>
-      <p>Designed & Developed by Adam Durrant ✌️</p>
+      <p class="footer-message">Designed & Developed by Adam Durrant ✌️</p>
     </footer>
   </div>
   </body>
