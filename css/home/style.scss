@@ -129,19 +129,12 @@ section {
     font-size:38px;
 }
 
-
-
-
-
-
 .about {
   background-image: url(https://assets.website-files.com/63120895f3c1b46487d8ee55/63120895f3c1b42a11d8ee7e_png4.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 82%;
 }
-
-
 
 .contact-form {
   background-image: url(/images/home/bg-1.svg);
@@ -168,6 +161,92 @@ textarea {
   font-family: 'Work Sans', sans-serif;
   margin-bottom: 30px;
 }
+
+
+
+/* slider */
+.slide-wrapper {
+  min-height: 24em;
+  background-color: transparent;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 41em;
+  border-radius: 0.6em;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  display: flex;
+  border: 1px solid black;
+}
+button#prev {
+  display: none;
+}
+
+.testimonial-container {
+  width: 85%;
+  margin: 3%;
+  height: 100%;
+  position: relative;
+  padding: 1.8em 1.2em;
+}
+.slide-wrapper button {
+  font-size: 1.8em;
+  height: 2.2em;
+  width: 2.2em;
+  background-color: #ffffff;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border: none;
+  color: #0a69ed;
+  box-shadow: 0 0 1em rgba(1, 17, 39, 0.25);
+  cursor: pointer;
+  border-radius: 50%;
+}
+button#next {
+  right: -1.1em;
+}
+button#prev {
+  left: -1.1em;
+}
+.testimonial-container p {
+  color: #000000;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.4;
+}
+.testimonial-container img {
+  display: block;
+  margin: 1.8em auto 1.25em auto;
+  border-radius: 50%;
+  width: 4.4em;
+}
+.testimonial-container h3 {
+  color: #000000;
+  font-size: 1em;
+  font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  margin:0px;
+}
+.testimonial-container h6 {
+  color: #000000;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.9em;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .slide-wrapper {
+    font-size: 14px;
+  }
+}
+/* slider end */
 
 .form-button {
   background: none !important;
