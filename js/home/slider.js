@@ -56,11 +56,6 @@ const testimonials = [
     testimonial:
       "Working with Adam over the past year or two has been fantastic. We initially started with an overhaul of my existing website to make it more SEO friendly and worked up to redesigning the whole site from the ground up, with Adam taking on design as well as SEO.",
   },
-
-
-
-
-
 ];
 
 //Current Slide
