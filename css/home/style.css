@@ -112,17 +112,34 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 110%;
-  top: 300%;
+  top: 270%;
   left: auto;
   right: 60%;
   transform: rotate(990deg);
   padding-top: 5vh;
 }
 
+.contact::before {
+  content: "";
+  position: absolute;
+  width: 90vh;
+  height: 100%;
+  z-index: -1;
+  background-image: url(/images/home/dark-blue-blob.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 110%;
+  top: 400%;
+  left: auto;
+  right: -13%;
+  transform: rotate(-90deg);
+  padding-top: 5vh;
+}
+
 .content-section {
   display: grid;
   width: auto;
-  grid-template-columns: 35% 55%;
+  grid-template-columns: 35% 63%;
   margin-right: auto;
   margin-left: auto;
   padding-top: 20px;
@@ -236,6 +253,7 @@ button#prev {
   font-family: "Work Sans", sans-serif;
   text-align: center;
   margin: 0px;
+  margin-bottom: 10px;
 }
 
 .testimonial-container h6 {
@@ -329,6 +347,7 @@ nav ul li a {
   width: 85px;
   font-family: "Vollkorn";
   font-style: normal;
+  font-weight: 700;
   font-size: 27px;
   float: left;
 }
@@ -610,7 +629,7 @@ a:-webkit-any-link {
 }
 
 .item-link:hover {
-  color: #0668E1;
+  color: #0668e1;
   text-decoration: underline;
   transition: 0.2s;
 }
@@ -930,6 +949,9 @@ a:-webkit-any-link {
   }
 }
 @media only screen and (max-width: 767px) {
+  .column {
+    margin: 0px !important;
+  }
   .header {
     width: 100%;
     display: inline;
@@ -950,7 +972,8 @@ a:-webkit-any-link {
     line-height: 1.2;
     z-index: 1;
   }
-  h1, .hero-text {
+  h1,
+.hero-text {
     font-size: 40px;
     line-height: 1.2;
     z-index: 1;
