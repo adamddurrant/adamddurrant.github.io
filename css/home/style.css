@@ -147,13 +147,16 @@ button#prev {
   display: none;
 }
 
+.testimonial-container * {
+  transition: 0.5s all;
+}
+
 .testimonial-container {
   width: 85%;
   margin: 3%;
   height: 100%;
   position: relative;
   padding: 1.8em 1.2em;
-  transition: opacity 1s;
 }
 
 .slide-wrapper button {
@@ -239,7 +242,7 @@ button#prev {
 @media screen and (max-width: 650px) {
   .slide-wrapper {
     font-size: 14px;
-    min-height: 34em;
+    min-height: 26em;
   }
 }
 /* slider end */
