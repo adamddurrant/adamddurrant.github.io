@@ -132,6 +132,8 @@ section {
   list-style-type: none !important;
   margin: 0;
   position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
 .splide__slide img {
@@ -432,7 +434,7 @@ section {
 }
 
 .project-icons {
-  width: 90%;
+  width: 80%;
 }
 
 .intro::before {
@@ -750,7 +752,7 @@ nav ul li a {
 
 .skills-used li {
   margin: 0 10px !important;
-  width: 40px;
+  width: 30px;
   justify-content: center;
   text-align: center;
   filter: contrast(1000%);
@@ -1015,9 +1017,6 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: row;
   gap: 4%;
-}
-
-.project-description {
   margin-top: 20px;
 }
 
@@ -1025,6 +1024,10 @@ a:-webkit-any-link {
   font-size: 1rem;
   margin-bottom: 20px;
   margin-right: 6px;
+}
+
+.tech-used {
+  font-weight: 500;
 }
 
 .item-links {
@@ -1040,7 +1043,6 @@ a:-webkit-any-link {
 .project-item {
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
   width: 100%;
   padding: 5%;
   padding-left: 7%;
