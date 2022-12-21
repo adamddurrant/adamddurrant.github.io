@@ -8,10 +8,11 @@
       src="https://kit.fontawesome.com/2a20f3910e.js"
       crossorigin="anonymous"
     ></script>
-    <title>Adam Durrant Portfolio</title>
+    <title>Adam Durrant | Meta Certified Front End Developer</title>
     <link rel="stylesheet" href="css/home/style.css" />
     <script src="js/home/menu-toggle.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <!--Lottie-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css"><!--splide-->
   </head>
 
   <body>
@@ -154,6 +155,7 @@
         </div>
     </section>
 
+
 <!--Projects-->
     <section id="coding-projects" class="coding-projects">
       <div class="container">
@@ -165,117 +167,140 @@
         </div>
           <div class="right-grid-column">
             <div class="project-inner">
-              <a class="project-item" href="/projects/shopping-list">
-                <div class="project-info">
-                  <h3 class="project-title">Shopping List App</h3>
-                  <p class="project-description">
-                    A real-time shopping list CRUD application built with HTML, CSS, vanilla Javascript & Firebase database.
-                  </p>
-                  <ul class="skills-used">
-                    <li>
-                      <img
-                        src="images/home/icons/html.svg"
-                        alt="HTML5 logo"
-                      />
+              <div class="splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <a class="project-item" href="/projects/shopping-list">
+                        <div class="project-info">
+                          <h3 class="project-title">Shopping List App</h3>
+                          <p class="project-description">
+                            A real-time shopping list CRUD application built with HTML, CSS, vanilla Javascript & Firebase database.
+                          </p>
+                          <ul class="skills-used">
+                            <li>
+                              <img
+                                src="images/home/icons/html.svg"
+                                alt="HTML5 logo"
+                              />
+                            </li>
+                            <li>
+                              <img src="images/home/icons/css.svg" alt="CSS3 logo" />
+                            </li>
+                            <li>
+                              <img
+                                src="images/home/icons/javascript.svg"
+                                alt="JS logo"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="images/home/icons/firebase.svg"
+                                alt="Firebase logo"
+                              />
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="project-image">
+                          <img
+                            class="project-image"
+                            src="/images/home/shopping-list-project.png"
+                          />
+                        </div>
+                      </a>
                     </li>
-                    <li>
-                      <img src="images/home/icons/css.svg" alt="CSS3 logo" />
+                    <li class="splide__slide">
+                      <a class="project-item" href="https://www.producthunt.com/products/seotweets">
+                        <div class="project-info">
+                          <h3 class="project-title">Twitter Curation App</h3>
+                          <p class="project-description">
+                            A part automated twitter curation application and newsletter. Built with Webflow, Zapier, Tweetpik & TwitterAPI.
+                          </p>
+                          <ul class="skills-used">
+                            <li>
+                              <img class="project-icons"
+                                src="images/home/icons/webflow.svg"
+                                alt="Webflow logo"
+                              />
+                            </li>
+                            <li>
+                              <img class="project-icons" src="images/home/icons/zapier.svg" alt="zapier logo" />
+                            </li>
+                            <li>
+                              <img class="project-icons"
+                                src="images/home/icons/tweetpik.svg"
+                                alt="tweetpik logo"
+                              />
+                            </li>
+                            <li>
+                              <img class="project-icons"
+                                src="images/home/icons/twitter.svg"
+                                alt="Twitter logo"
+                              />
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="project-image">
+                          <img 
+                            class="project-image"
+                            src="/images/home/seotweets.png"
+                          />
+                        </div>
+                      </a>
                     </li>
-                    <li>
-                      <img
-                        src="images/home/icons/javascript.svg"
-                        alt="JS logo"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="images/home/icons/firebase.svg"
-                        alt="Firebase logo"
-                      />
+                    <li class="splide__slide">
+                      <a class="project-item" href="/projects/shopping-list">
+                        <div class="project-info">
+                          <h3 class="project-title">SEO Toolbox App</h3>
+                          <p class="project-description">
+                            A collection of curated SEO resources. Made using React, Tailwind and a local database file.
+                          </p>
+                          <ul class="skills-used">
+                            <li>
+                              <img
+                                src="images/home/icons/html.svg"
+                                alt="HTML5 logo"
+                              />
+                            </li>
+                            <li>
+                              <img src="images/home/icons/css.svg" alt="CSS3 logo" />
+                            </li>
+                            <li>
+                              <img
+                                src="images/home/icons/javascript.svg"
+                                alt="JS logo"
+                              />
+                            </li>
+                            <li>
+                              <img
+                                src="images/home/icons/firebase.svg"
+                                alt="Firebase logo"
+                              />
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="project-image">
+                          <img
+                            class="project-image"
+                            src="/images/home/shopping-list-project.png"
+                          />
+                        </div>
+                      </a>
+
                     </li>
                   </ul>
-                </div>
-                <div class="project-image">
-                  <img
-                    class="project-image"
-                    src="/images/home/shopping-list-project.png"
-                  />
-                </div>
-              </a>
-              <a class="project-item" href="https://www.producthunt.com/products/seotweets">
-                <div class="project-info">
-                  <h3 class="project-title">Twitter Curation App</h3>
-                  <p class="project-description">
-                    A part automated twitter curation application and newsletter. Built with Webflow, Zapier, Tweetpik & TwitterAPI.
-                  </p>
-                  <ul class="skills-used">
-                    <li>
-                      <img
-                        src="images/home/icons/html.svg"
-                        alt="HTML5 logo"
-                      />
-                    </li>
-                    <li>
-                      <img src="images/home/icons/css.svg" alt="CSS3 logo" />
-                    </li>
-                    <li>
-                      <img
-                        src="images/home/icons/javascript.svg"
-                        alt="JS logo"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="images/home/icons/firebase.svg"
-                        alt="Firebase logo"
-                      />
-                    </li>
-                  </ul>
-                </div>
-                <div class="project-image">
-                  <img
-                    class="project-image"
-                    src="/images/home/seotweets.png"
-                  />
-                </div>
-              </a>
-              <a class="project-item" href="/projects/shopping-list">
-                <div class="project-info">
-                  <h3 class="project-title">Shopping List App</h3>
-                  <p class="project-description">
-                    A real-time shopping list CRUD application built with HTML, CSS, vanilla Javascript & Firebase database.
-                  </p>
-                  <ul class="skills-used">
-                    <li>
-                      <img
-                        src="images/home/icons/html.svg"
-                        alt="HTML5 logo"
-                      />
-                    </li>
-                    <li>
-                      <img src="images/home/icons/css.svg" alt="CSS3 logo" />
-                    </li>
-                    <li>
-                      <img
-                        src="images/home/icons/javascript.svg"
-                        alt="JS logo"
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="images/home/icons/firebase.svg"
-                        alt="Firebase logo"
-                      />
-                    </li>
-                  </ul>
-                </div>
-                <div class="project-image">
-                  <img
-                    class="project-image"
-                    src="/images/home/shopping-list-project.png"
-                  />
-                </div>
-              </a>
+                  <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                      <img src="images/home/icons/arrow-right.svg">
+                    </button>
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                      <img src="images/home/icons/arrow-right.svg">
+                    </button>
+                  </div>                </div>
+              
+              </div>
+
             </div>
           </div>
         </div>
@@ -416,6 +441,22 @@
       <p class="footer-message">Built by Adam Durrant ✌️</p>
     </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script src="js/home/slider.js"></script>
+  <script>
+    var splide = new Splide( '.splide' , {
+      gap: '2rem'
+    } );
+    var bar    = splide.root.querySelector( '.my-carousel-progress-bar' );
+    
+    // Updates the bar width whenever the carousel moves:
+    splide.on( 'mounted move', function () {
+      var end  = splide.Components.Controller.getEnd() + 1;
+      var rate = Math.min( ( splide.index + 1 ) / end, 1 );
+      bar.style.width = String( 100 * rate ) + '%';
+    } );
+    
+    splide.mount();
+  </script>
   </body>
 </html>
