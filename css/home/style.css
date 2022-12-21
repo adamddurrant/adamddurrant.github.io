@@ -609,7 +609,7 @@ button#prev {
   letter-spacing: 0.03em;
   font-weight: 400;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 @media screen and (max-width: 650px) {
