@@ -114,6 +114,7 @@ section {
 .splide {
   position: relative;
   visibility: hidden;
+  overflow: hidden;
 }
 
 .splide.is-initialized,
@@ -125,6 +126,8 @@ section {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   box-sizing: border-box;
+  -ms-flex-negative: 0;
+  overflow: hidden;
   flex-shrink: 0;
   list-style-type: none !important;
   margin: 0;
@@ -230,14 +233,14 @@ section {
   border-radius: 50%;
   cursor: pointer;
   display: flex;
-  height: 2em;
+  height: 1.5em;
   justify-content: center;
   opacity: 1;
   padding: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 2em;
+  width: 1.5em;
   z-index: 1;
 }
 
@@ -262,6 +265,7 @@ section {
 .splide__arrow--prev img {
   transform: scaleX(-1);
   transform: rotate(180deg);
+  width: 60%;
 }
 
 .splide__arrow--next {
@@ -387,6 +391,10 @@ section {
   right: auto;
 }
 
+.splide__arrow--next img {
+  width: 60%;
+}
+
 .splide__arrows--rtl .splide__arrow--next img {
   transform: scaleX(-1);
 }
@@ -421,17 +429,6 @@ section {
   padding: 1em 0;
   right: 0.5em;
   top: 0;
-}
-
-.my-slider-progress {
-  background: #ccc;
-}
-
-.my-slider-progress-bar {
-  background: greenyellow;
-  height: 2px;
-  transition: width 400ms ease;
-  width: 0;
 }
 
 .project-icons {
@@ -1012,6 +1009,32 @@ a:-webkit-any-link {
 .type {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  gap: 4%;
+}
+
+.project-description {
+  margin-top: 20px;
+}
+
+.project-link {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  margin-right: 6px;
+}
+
+.item-links {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.5em;
 }
 
 .project-item {
