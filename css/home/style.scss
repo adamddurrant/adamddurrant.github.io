@@ -56,6 +56,10 @@ body {
   margin: 0;
 }
 
+.right-grid-column {
+  overflow: hidden;
+}
+
 .mini-icon img {
   width: 100%;
   display: inline-block;
@@ -567,6 +571,7 @@ button#prev {
   margin: 0px;
   margin-bottom: 5px;
 }
+
 .testimonial-container h6 {
   color: #000000;
   font-family: 'Work Sans', sans-serif;
