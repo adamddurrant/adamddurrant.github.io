@@ -4,15 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1. user-scalable=0" />
     <meta name="robots" content="noindex" />
-    <script
-      src="https://kit.fontawesome.com/2a20f3910e.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="images/home/favicon/favicon-sml.png" rel="shortcut icon" type="image/x-icon">
+		<link href="images/home/favicon/favicon-lrg.png" rel="apple-touch-icon">
     <title>Adam Durrant | Meta Certified Front End Developer</title>
     <link rel="stylesheet" href="css/home/style.css" />
-    <script src="js/home/menu-toggle.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <!--Lottie-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css"><!--splide-->
+    <script src="https://kit.fontawesome.com/2a20f3910e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <!--Lottie-->
   </head>
 
   <body>
@@ -24,9 +22,9 @@
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
       <li><a class="nav-item" href="/">Home</a></li>
-          <li><a class="nav-item" href="#coding-projects">Projects</a></li>
-          <li><a class="nav-item"  href="#about">About</a></li>
-          <li><a class="nav-item"  href="#contact">Contact</a></li>
+          <li><a onclick="toggleOff()" class="nav-item" href="#coding-projects">Projects</a></li>
+          <li><a onclick="toggleOff()" class="nav-item"  href="#about">About</a></li>
+          <li><a onclick="toggleOff()" class="nav-item"  href="#contact">Contact</a></li>
     </ul>
     <div class="contact-button">
       <a href="#contact">Reach out</a>
@@ -236,28 +234,28 @@
                         <div class="project-info">
                           <h3 class="project-title">SEO Toolbox App</h3>
                           <p class="project-description">
-                            A curated SEO resources web app. Made using React, Tailwind and a local database file and some simple Framer Motion.
+                            A curated SEO resources web app. Made using React, Tailwind, a local database file and basic Framer Motion.
                           </p>
                           <p class="tech-used">Technology used:</p>
                           <ul class="skills-used">
                             <li>
                               <img class="project-icons"
-                                src="images/home/icons/webflow.svg"
+                                src="images/home/icons/html.svg"
                                 alt="Webflow logo"
                               />
                             </li>
                             <li>
-                              <img class="project-icons" src="images/home/icons/zapier.svg" alt="zapier logo" />
+                              <img class="project-icons" src="images/home/icons/tailwind.svg" alt="zapier logo" />
                             </li>
                             <li>
                               <img class="project-icons"
-                                src="images/home/icons/tweetpik.svg"
+                                src="images/home/icons/react.svg"
                                 alt="tweetpik logo"
                               />
                             </li>
                             <li>
                               <img class="project-icons"
-                                src="images/home/icons/twitter.svg"
+                                src="images/home/icons/framer.svg"
                                 alt="Twitter logo"
                               />
                             </li>
@@ -546,18 +544,10 @@
                   </div>  
                 </div>
               </div>
-
-              <!-- <div class="testimonial-container" id="testimonial-container"></div>
-              <button id="prev">&lt;</button>
-              <button id="next">
-                <img src="images/home/icons/arrow-right.svg">
-              </button> -->
-
-            
             </div>
             </div>
             </div>
-  </div>
+            </div>
             </section>
 
 
@@ -646,6 +636,11 @@
       gap: '2rem'
     } );
     splide2.mount();
+  </script>
+  <script>
+  function toggleOff() {
+  document.getElementById('menu-btn').checked = false;
+  }
   </script>
   </body>
 </html>

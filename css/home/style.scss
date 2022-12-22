@@ -1002,6 +1002,7 @@ a:-webkit-any-link {
   font-size: 1rem;
   margin-bottom: 20px;
   margin-right: 6px;
+  margin-top: 20px;
 }
 
 .tech-used {
@@ -1237,8 +1238,8 @@ a:-webkit-any-link {
   }
 
   .social-item {
-    margin-right: 17px;
-    font-size: 17px;
+    margin-right: 0px;
+    font-size: 1rem;
   }
 
   .skills li {
@@ -1264,7 +1265,7 @@ a:-webkit-any-link {
   }
 
   .project-item {
-    padding: 5%;
+    padding: 7%;
   }
   .project-info {
     flex-basis: 4rem;
