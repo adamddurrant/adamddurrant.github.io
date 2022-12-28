@@ -438,7 +438,7 @@ section {
 }
 
 .project-icons {
-  width: 80%;
+  width: 30px;
 }
 
 .intro::before {
@@ -600,6 +600,12 @@ button#prev {
   text-align: left;
   margin: 0px;
   margin-bottom: 5px;
+}
+
+.g-recaptcha {
+  width: 100%;
+  margin-bottom: 20px;
+  display: none;
 }
 
 .testimonial-container h6 {
@@ -1021,7 +1027,7 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: row;
   gap: 4%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .project-link {
@@ -1091,11 +1097,6 @@ a:-webkit-any-link {
   border: 1px solid black;
   border-radius: 100%;
   z-index: 1;
-}
-
-.memoji-idea-2 {
-  width: 80%;
-  margin: auto;
 }
 
 #nav-item {
@@ -1173,7 +1174,6 @@ a:-webkit-any-link {
 .header .menu-icon {
   cursor: pointer;
   display: inline-block;
-  float: right;
   padding: 28px 20px;
   position: relative;
   -webkit-user-select: none;

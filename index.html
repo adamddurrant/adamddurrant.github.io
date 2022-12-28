@@ -6,7 +6,7 @@
     <meta name="robots" content="noindex" />
     <link href="images/home/favicon/favicon-sml.png" rel="shortcut icon" type="image/x-icon">
 		<link href="images/home/favicon/favicon-lrg.png" rel="apple-touch-icon">
-    <title>Adam Durrant | Meta Certified Front End Developer</title>
+    <title>Adam Durrant | SEO Specialist & Meta Certified Web Developer</title>
     <link rel="stylesheet" href="css/home/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css"><!--splide-->
     <script src="https://kit.fontawesome.com/2a20f3910e.js" crossorigin="anonymous"></script>
@@ -175,7 +175,7 @@
                           <p class="project-description">
                             A real-time shopping list CRUD application built with HTML, CSS, vanilla Javascript & Firebase database.
                           </p>
-                          <p class="tech-used">Technology used:</p>
+                          
                           <ul class="skills-used">
                             <li>
                               <img
@@ -236,7 +236,7 @@
                           <p class="project-description">
                             A curated SEO resources web app. Made using React, Tailwind, a local database file and basic Framer Motion.
                           </p>
-                          <p class="tech-used">Technology used:</p>
+                          
                           <ul class="skills-used">
                             <li>
                               <img class="project-icons"
@@ -294,11 +294,75 @@
                     <li class="splide__slide">
                       <span class="project-item">
                         <div class="project-info">
+                          <h3 class="project-title">Popular Movies App</h3>
+                          <p class="project-description">
+                            Popular movie web app updated weekly with movie titles. Built with the TMDb API, HTML, Tailwind CSS and React.
+                          </p>
+                          
+                          <ul class="skills-used">
+                            
+                            <li>
+                              <img class="project-icons"
+                                src="images/home/icons/html.svg"
+                                alt="HTML logo"
+                              />
+                            </li>
+                            <li>
+                              <img class="project-icons" src="images/home/icons/tailwind.svg" alt="Tailwind logo" />
+                            </li>
+                            <li>
+                              <img class="project-icons"
+                                src="images/home/icons/react.svg"
+                                alt="React logo"
+                              />
+                            </li>
+                            <li>
+                              <img class="project-icons"
+                                src="images/home/icons/framer.svg"
+                                alt="React logo"
+                              />
+                            </li>
+                          </ul>
+                  
+                          <div class="project-links">
+                            <div class="social-item project-link">
+                              <a class="item-link" href="https://movie-filtering.vercel.app/"
+                                ><span>View project</span>
+                                <img
+                                  class="social-arrow"
+                                  src="images/home/arrow-right.svg"
+                                />
+                              </a>
+                            </div>
+                            <div class="social-item project-link">
+                              <a class="item-link" href="https://github.com/adamddurrant/movie-filtering"
+                                ><span>View code</span>
+                                <img
+                                  class="social-arrow"
+                                  src="images/home/arrow-right.svg"
+                                />
+                              </a>
+                            </div>
+                          </div>
+
+
+                        </div>
+                        <div class="project-image">
+                          <img
+                            class="project-image"
+                            src="/images/home/top-100-movies.png"
+                          />
+                        </div>
+                      </span>
+                    </li>
+                    <li class="splide__slide">
+                      <span class="project-item">
+                        <div class="project-info">
                           <h3 class="project-title">Twitter Curation App</h3>
                           <p class="project-description">
                             An automated twitter curation web app & newsletter. Built with Webflow, Zapier, Tweetpik & TwitterAPI.
                           </p>
-                          <p class="tech-used">Technology used:</p>
+                          
                           <ul class="skills-used">
                             
                             <li>
@@ -353,7 +417,7 @@
                           <p class="project-description">
                             Functioning website for the Peterborough City Academy of Ballet made using HTML, CSS & Webflow.
                           </p>
-                          <p class="tech-used">Technology used:</p>
+                          
                           <ul class="skills-used">
                             
                             <li>
@@ -395,6 +459,7 @@
                         </div>
                       </span>
                     </li>
+              
                   </ul>
                   <div class="splide__arrows">
                     <button class="splide__arrow splide__arrow--prev">
@@ -620,13 +685,18 @@
             ></a>
           </li>
           <li>
-            <a href="https://twitter.com/adamddurrant"
-              ><i class="fab fa-twitter" aria-hidden="true"></i
+            <a href="https://github.com/adamddurrant"
+              ><i class="fab fa-github" aria-hidden="true"></i
             ></a>
           </li>
           <li>
-            <a href="https://github.com/adamddurrant"
-              ><i class="fab fa-github" aria-hidden="true"></i
+            <a href="https://medium.com/@addurrant"
+              ><i class="fab fa-medium" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/adamddurrant"
+              ><i class="fab fa-twitter" aria-hidden="true"></i
             ></a>
           </li>
           <li>
@@ -635,7 +705,7 @@
             ></a>
           </li>
         </ul>
-        <form action="https://formspree.io/f/xlevwzjl" method="POST">
+        <form id="main-form" action="https://formspree.io/f/xlevwzjl" method="POST">
           <input
             type="text"
             id="name"
@@ -657,7 +727,8 @@
             required
           ></textarea>
           <div class="social-item">
-            <button class="form-button item-link" type="submit">
+            <div id="captcha" class="g-recaptcha brochure__form__captcha" data-sitekey="6Lf7MrUjAAAAAERUS6HFi6q7haDcWgl4dbUeAjAZ"></div>
+            <button class="form-button item-link" data-action='submit' data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'>
               Send your message<img
                 class="social-arrow"
                 src="images/home/arrow-right.svg"
@@ -674,8 +745,21 @@
       <p class="footer-message">Built by Adam Durrant ✌️</p>
     </footer>
   </div>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <script> //multiple splide initialisation
+  <script>
+    let messageBox = document.getElementById('msg');
+    let captcha = document.getElementById('captcha');
+    messageBox.addEventListener("click", function() {
+      captcha.style.display = "block";
+});
+    </script>
+  <script>
+    function onSubmit(token) {
+        document.getElementById("main-form").submit();
+    }
+    </script>
+  <script> //multiple splide initialisations
     var splide = new Splide( '#splide1' , {
       gap: '2rem'
     } );
@@ -687,7 +771,7 @@
     splide2.mount();
   </script>
   <script>
-  function toggleOff() {
+  function toggleOff() { //toggles menu on button click
   document.getElementById('menu-btn').checked = false;
   }
   </script>
