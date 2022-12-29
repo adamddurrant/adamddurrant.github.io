@@ -136,8 +136,68 @@ footer > p {
 }
 
 section {
-  padding-top: 7vh;
-  padding-bottom: 7vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+}
+
+.worked-logo {
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 85px;
+  mix-blend-mode: color-burn;
+  filter: contrast(200%) grayscale(1);
+}
+
+.geotab-image {
+  width: 110px;
+  position: absolute;
+}
+
+.ecoski {
+  width: 60px;
+}
+
+.blackcreek {
+  width: 105px;
+  position: absolute;
+}
+
+.johnsons {
+  width: 100px;
+  position: absolute;
+}
+
+.bootcamp {
+  width: 120px;
+  position: absolute;
+}
+
+.zoe-image {
+  width: 60px;
+}
+
+.imaware {
+  width: 100px;
+  position: absolute;
+}
+
+.tots {
+  width: 110px;
+  position: absolute;
+}
+
+.parent div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .splide__container {
@@ -545,7 +605,7 @@ section {
   font-weight: normal;
   text-rendering: optimizelegibility;
   line-height: 1.1;
-  font-size: 38px;
+  font-size: 25px;
 }
 
 input,
@@ -1285,7 +1345,7 @@ a:-webkit-any-link {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 240px;
+  max-height: 295px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
@@ -1320,6 +1380,9 @@ a:-webkit-any-link {
     max-height: none;
   }
   .header .menu-icon {
+    display: none;
+  }
+  .contact-nav {
     display: none;
   }
 }
@@ -1374,6 +1437,12 @@ a:-webkit-any-link {
   .column {
     margin: 0px !important;
   }
+  .johnsons {
+    position: relative;
+  }
+  .parent {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .blogs-wrapper {
     flex-direction: column;
   }
@@ -1395,6 +1464,7 @@ a:-webkit-any-link {
   }
   .project-image {
     width: 100%;
+    margin-bottom: 15px;
   }
   h1 {
     line-height: 1.2;
@@ -1455,7 +1525,8 @@ a:-webkit-any-link {
     padding-top: 0px;
   }
   .header .logo {
-    padding: 10px 19px;
+    padding: 14px 0px 0px 19px;
+    font-size: 23px;
   }
   .projects {
     background-size: cover;
