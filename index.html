@@ -838,8 +838,9 @@
             required
           ></textarea>
           <div class="social-item">
-            <div id="captcha" class="g-recaptcha brochure__form__captcha" data-sitekey="6LcppbgjAAAAADicngOWi9i0mbIZg6BvP7mYJrjA"></div>
-            <button class="form-button item-link" data-action='submit' data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'>
+            <div id="rcaptcha" class="g-recaptcha brochure__form__captcha" data-sitekey="6LcppbgjAAAAADicngOWi9i0mbIZg6BvP7mYJrjA"></div>
+            <button id="submitRequest" class="form-button item-link" data-action='submit' data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'>
+              <span id="captcha" style="color:red" /></span>
               Send your message<img
                 class="social-arrow"
                 src="images/home/arrow-right.svg"
@@ -856,7 +857,32 @@
       <p class="footer-message">Built by Adam Durrant ✌️</p>
     </footer>
   </div>
-  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onloadCallback() {
+        document.getElementById("submitRequest").disabled = true;
+      };
+    function enableBtn(){
+       document.getElementById("submitRequest").disabled = false;
+     }
+    </script>
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+   <script>
+    function get_action(form) 
+    {
+       var v = grecaptcha.getResponse();
+       if(v.length == 0)
+       {
+           document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+           return false;
+       }
+       else
+       {
+            document.getElementById('captcha').innerHTML="Captcha completed";
+           return true; 
+       }
+   }
+   </script>
+    
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
   <script>
     let messageBox = document.getElementById('msg');
