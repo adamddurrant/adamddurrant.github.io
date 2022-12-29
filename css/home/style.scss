@@ -134,7 +134,6 @@ body {
   max-width: 0.9em;
   height: auto;
   white-space: nowrap;
-  margin-right: 3px;
   border-radius: 3px;
   vertical-align: top;
 }
@@ -703,6 +702,14 @@ button#prev {
   display: none;
 }
 
+#g-recaptcha-response {
+  display: block !important;
+  position: absolute;
+  margin: -50px 0 0 0 !important;
+  z-index: -999999;
+  opacity: 0;
+}
+
 .testimonial-container h6 {
   color: #000000;
   font-family: 'Work Sans', sans-serif;
@@ -748,15 +755,27 @@ button#prev {
   color: #1f743d;
 }
 
-.form-button {
-  background: none !important;
-  border: none;
-  padding: 0 !important;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 17px;
+.form-submit {
+  padding: 2%;
+  background-color: transparent;
   font-family: 'Work Sans', sans-serif;
+  text-align: center;
+  font-size: 16px;
+  width: 30%;
+  min-height: 30px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.form-submit:hover {
+  color: white;
+  background-color: black;
+  transition: 0.5s all;
 }
 
 ::placeholder {

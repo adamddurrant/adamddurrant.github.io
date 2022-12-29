@@ -4,900 +4,739 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1. user-scalable=0" />
     <link href="images/home/favicon/favicon-sml.png" rel="shortcut icon" type="image/x-icon">
-		<link href="images/home/favicon/favicon-lrg.png" rel="apple-touch-icon">
+    <link href="images/home/favicon/favicon-lrg.png" rel="apple-touch-icon">
     <title>Adam Durrant | SEO Specialist & Meta Certified Web Developer</title>
     <link rel="stylesheet" href="css/home/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css"><!--splide-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css">
+    <!--splide-->
     <script src="https://kit.fontawesome.com/2a20f3910e.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <!--Lottie-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <!--Lottie-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!--Recaptcha-->
   </head>
-
   <body>
     <div class="page-wrapper">
-        <!--menu-->
-   <header class="header">
-    <a href="" class="logo">A.Durrant</a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <ul class="menu">
-      <li><a class="nav-item" href="/">Home</a></li>
-      <li><a onclick="toggleOff()" class="nav-item"  href="#about">About</a></li>
-      <li><a onclick="toggleOff()" class="nav-item" href="#coding-projects">Projects</a></li>
-      <li><a onclick="toggleOff()" class="nav-item" href="#blogs">Blogs</a></li>
-      <li class="contact-nav"><a onclick="toggleOff()" class="nav-item"  href="#contact">Contact</a></li>
-    </ul>
-    <div class="contact-button">
-      <a href="#contact">Reach out</a>
-    </div>
-  </header>
-
-    <!--hero-->
-    <section class="intro">
-      <div class="container">
-        <div class="wrapper">
-          <div class="intro-grid">
-            <div class="col col-1">
-              <div class="first-col-content">
-                <h1>
-                  Hi, I'm Adam.</br>
-                  <span class="hero-text">An SEO specialist & aspiring <img src="images/home/meta-icon.png"> certified front end developer.</span>
-                </h1>
-                <div class="socials">
-                  <div class="social-item">
-                    <a
-                      class="item-link"
-                      href="https://www.linkedin.com/in/adam-durrant/"
-                      ><span>Linkedin</span>
-                      <img
-                        class="social-arrow"
-                        src="images/home/arrow-right.svg"
-                      />
-                    </a>
-                  </div>
-                  <div class="social-item">
-                    <a class="item-link" href="images/home/A Durrant Resume.pdf"
-                      ><span>Resume</span>
-                      <img
-                        class="social-arrow"
-                        src="images/home/arrow-right.svg"
-                      />
-                    </a>
-                  </div>
-                  <div class="social-item">
-                    <a class="item-link" href="#coding-projects"
-                      ><span>Projects</span>
-                      <img
-                        class="social-arrow"
-                        src="images/home/arrow-right.svg"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col col-2">
-              <img class="profile" src="images/home/profile-pic.png" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <h3 class="toolkit-heading">Front-end stack</h3>
-      <ul class="skills">
-        <li>
-          <img
-            src="images/home/icons/html.svg"
-            alt="HTML5 logo"
-          />HTML5
-        </li>
-        <li>
-          <img src="images/home/icons/css.svg" alt="CSS3 logo" />CSS3
-        </li>
-        <li>
-          <img
-            src="images/home/icons/javascript.svg"
-            alt="Javascript logo"
-          />JS
-        </li>
-        <li>
-          <img
-            src="images/home/icons/react.svg"
-            alt="React logo"
-          />React
-        </li>
-        <li>
-          <img
-            src="images/home/icons/tailwind.svg"
-            alt="Tailwind logo"
-          />Tailwind
-        </li>
-        <li>
-          <img
-            src="images/home/icons/webflow.svg"
-            alt="Webflow logo"
-          />Webflow
-        </li>
-        <li>
-          <img
-            src="images/home/icons/github.svg"
-            alt="Github logo"
-          />Github
-        </li>
-        <li>
-          <img
-            src="images/home/icons/firebase.svg"
-            alt="Firebase logo"
-          />Firebase
-        </li>
-      </ul>
-    </section>
-
-<!--about-->
-    <section id="about" class="about">
-      <div class="container">
-      <div class="content-section">
-        <div class="left-grid-column">
-          <div class="sub-heading">About me
-    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
-          </div>
-        </div>
-          <div class="right-grid-column">
-            <p>👋 I'm Adam Durrant, I have almost a decade of experience as an SEO specialist. I've worked freelance, in-house and agency-side for startups, SMEs and big corporations like; <span class="mini-icon"><img src="/images/home/icons/geotab.png"></span><span class="geotab"><span class="geotab">Geotab</span></span>, <span class="mini-icon"><img src="/images/home/icons/interflora.jpeg"></span><span class="interflora"><span class="interflora">Interflora</span></span> and <span class="mini-icon"><img src="/images/home/icons/zoe.jpeg"></span><span class="zoe"><span class="zoe">ZOE</span></span>.</p>
-              <p>
-              Myself and my work have been featured in; <span class="mini-icon"><img src="/images/home/icons/sew.png"></span></span><span class="sew">Search Engine Watch</span>, <span class="mini-icon"><img src="/images/home/icons/ttt.png"></span></span><span class="ttt">Traffic Think Tank</span>, <span class="mini-icon"><img src="/images/home/icons/seofomo.png"></span></span>SEO FOMO & <span class="mini-icon"><img class="oncrawl" src="/images/home/icons/oncrawl.png"></span></span><span class="oncrawl">Oncrawl</span>. For as long as I can remember I have been passionate about the web and fascinated by code.</p>
-              <p>
-                After achieving high in my current profession, my next ambition is to transition my career from marketing to engineering. I am currently studying, building projects and looking for my first junior front-end web development role.
-              </p>
-          </div>
-        </div>
-        </div>
-    </section>
-
-
-<!--Projects-->
-    <section id="coding-projects" class="coding-projects">
-      <div class="container">
-      <div class="content-section">
-        <div class="left-grid-column">
-          <div class="sub-heading">Coding projects
-    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
-          </div>
-        </div>
-          <div class="right-grid-column">
-            <div class="project-inner">
-              <div id="splide1" class="splide">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <span class="project-item" href="/projects/shopping-list">
-                        <div class="project-info">
-                          <h3 class="project-title">Shopping List App</h3>
-                          <p class="project-description">
-                            A real-time shopping list CRUD application built with HTML, CSS, vanilla Javascript & Firebase database.
-                          </p>
-                          
-                          <ul class="skills-used">
-                            <li>
-                              <img
-                                src="images/home/icons/html.svg"
-                                alt="HTML5 logo"
-                              />
-                            </li>
-                            <li>
-                              <img src="images/home/icons/css.svg" alt="CSS3 logo" />
-                            </li>
-                            <li>
-                              <img
-                                src="images/home/icons/javascript.svg"
-                                alt="JS logo"
-                              />
-                            </li>
-                            <li>
-                              <img
-                                src="images/home/icons/firebase.svg"
-                                alt="Firebase logo"
-                              />
-                            </li>
-                          </ul>
-                          
-                          <div class="project-links">
-                            <div class="social-item project-link">
-                              <a class="item-link" href="/projects/shopping-list"
-                                ><span>View project</span>
-                                <img 
-                                  class="social-arrow"
-                                  src="images/home/arrow-right.svg"
-                                />
-                              </a>
-                            </div>
-                            <div class="social-item project-link">
-                              <a class="item-link" href="https://github.com/adamddurrant/shopping-list"
-                                ><span>View code</span>
-                                <img
-                                  class="social-arrow"
-                                  src="images/home/arrow-right.svg"
-                                />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="project-image">
-                          <img
-                            class="project-image"
-                            src="/images/home/shopping-list-project.png"
-                          />
-                        </div>
-                      </span>
-                    </li>
-                    <li class="splide__slide">
-                      <span class="project-item">
-                        <div class="project-info">
-                          <h3 class="project-title">SEO Toolbox App</h3>
-                          <p class="project-description">
-                            A curated SEO resources web app. Made using React, Tailwind, a local database file and basic Framer Motion.
-                          </p>
-                          
-                          <ul class="skills-used">
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/html.svg"
-                                alt="Webflow logo"
-                              />
-                            </li>
-                            <li>
-                              <img class="project-icons" src="images/home/icons/tailwind.svg" alt="zapier logo" />
-                            </li>
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/react.svg"
-                                alt="tweetpik logo"
-                              />
-                            </li>
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/framer.svg"
-                                alt="Twitter logo"
-                              />
-                            </li>
-                          </ul>
-                         
-                          <div class="project-links">
-                            <div class="social-item project-link">
-                              <a class="item-link" href="https://resources-project.vercel.app/"
-                                ><span>View project</span>
-                                <img
-                                  class="social-arrow"
-                                  src="images/home/arrow-right.svg"
-                                />
-                              </a>
-                            </div>
-                            <div class="social-item project-link">
-                              <a class="item-link" href="https://github.com/adamddurrant/resources-project"
-                                ><span>View code</span>
-                                <img
-                                  class="social-arrow"
-                                  src="images/home/arrow-right.svg"
-                                />
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="project-image">
-                          <img
-                            class="project-image"
-                            src="/images/home/resources-project.png"
-                          />
-                        </div>
-                      </span>
-
-                    </li>
-                    <li class="splide__slide">
-                      <span class="project-item">
-                        <div class="project-info">
-                          <h3 class="project-title">Popular Movies App</h3>
-                          <p class="project-description">
-                            Popular movie web app updated weekly with movie titles. Built with the TMDb API, HTML, Tailwind CSS and React.
-                          </p>
-                          
-                          <ul class="skills-used">
-                            
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/html.svg"
-                                alt="HTML logo"
-                              />
-                            </li>
-                            <li>
-                              <img class="project-icons" src="images/home/icons/tailwind.svg" alt="Tailwind logo" />
-                            </li>
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/react.svg"
-                                alt="React logo"
-                              />
-                            </li>
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/framer.svg"
-                                alt="React logo"
-                              />
-                            </li>
-                          </ul>
-                  
-                          <div class="project-links">
-                            <div class="social-item project-link">
-                              <a class="item-link" href="https://movie-filtering.vercel.app/"
-                                ><span>View project</span>
-                                <img
-                                  class="social-arrow"
-                                  src="images/home/arrow-right.svg"
-                                />
-                              </a>
-                            </div>
-                            <div class="social-item project-link">
-                              <a class="item-link" href="https://github.com/adamddurrant/movie-filtering"
-                                ><span>View code</span>
-                                <img
-                                  class="social-arrow"
-                                  src="images/home/arrow-right.svg"
-                                />
-                              </a>
-                            </div>
-                          </div>
-
-
-                        </div>
-                        <div class="project-image">
-                          <img
-                            class="project-image"
-                            src="/images/home/top-100-movies.png"
-                          />
-                        </div>
-                      </span>
-                    </li>
-                    <li class="splide__slide">
-                      <span class="project-item">
-                        <div class="project-info">
-                          <h3 class="project-title">Twitter Curation App</h3>
-                          <p class="project-description">
-                            An automated twitter curation web app & newsletter. Built with Webflow, Zapier, Tweetpik & TwitterAPI.
-                          </p>
-                          
-                          <ul class="skills-used">
-                            
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/webflow.svg"
-                                alt="Webflow logo"
-                              />
-                            </li>
-                            <li>
-                              <img class="project-icons" src="images/home/icons/zapier.svg" alt="zapier logo" />
-                            </li>
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/tweetpik.svg"
-                                alt="tweetpik logo"
-                              />
-                            </li>
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/twitter.svg"
-                                alt="Twitter logo"
-                              />
-                            </li>
-                          </ul>
-                  
-                          <div class="project-links">
-                            <div class="social-item project-link">
-                              <a class="item-link" href="https://www.producthunt.com/products/seotweets"
-                                ><span>View project</span>
-                                <img
-                                  class="social-arrow"
-                                  src="images/home/arrow-right.svg"
-                                />
-                              </a>
-                            </div>
-                          </div>
-
-
-                        </div>
-                        <div class="project-image">
-                          <img
-                            class="project-image"
-                            src="/images/home/seotweets.png"
-                          />
-                        </div>
-                      </span>
-                    </li>
-                    <li class="splide__slide">
-                      <span class="project-item">
-                        <div class="project-info">
-                          <h3 class="project-title">Academy Of Ballet Site</h3>
-                          <p class="project-description">
-                            Functioning website for the Peterborough City Academy of Ballet made using HTML, CSS & Webflow.
-                          </p>
-                          
-                          <ul class="skills-used">
-                            
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/html.svg"
-                                alt="HTML logo"
-                              />
-                            </li>
-                            <li>
-                              <img class="project-icons" src="images/home/icons/css.svg" alt="CSS logo" />
-                            </li>
-                            <li>
-                              <img class="project-icons"
-                                src="images/home/icons/webflow.svg"
-                                alt="Webflow logo"
-                              />
-                            </li>
-                          </ul>
-                  
-                          <div class="project-links">
-                            <div class="social-item project-link">
-                              <a class="item-link" href="https://www.cityacademyofballet.co.uk/"
-                                ><span>View project</span>
-                                <img
-                                  class="social-arrow"
-                                  src="images/home/arrow-right.svg"
-                                />
-                              </a>
-                            </div>
-                          </div>
-
-
-                        </div>
-                        <div class="project-image">
-                          <img
-                            class="project-image"
-                            src="/images/home/city-academy.png"
-                          />
-                        </div>
-                      </span>
-                    </li>
-              
-                  </ul>
-                  <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev">
-                      <img src="images/home/icons/arrow-right.svg">
-                    </button>
-                    </button>
-                    <button class="splide__arrow splide__arrow--next">
-                      <img src="images/home/icons/arrow-right.svg">
-                    </button>
-                  </div>                
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-    </section>
-
-<!--tools-->
-
-<section id="tools" class="tools">
-  <div class="container">
-  <div class="content-section">
-    <div class="left-grid-column">
-      <div class="sub-heading">Tool stack
-    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
-          </div>
-      </div>
-      <div class="right-grid-column">
-        <div class="row">
-          <div class="column">
-              <h2 class="type">Design</h2>
-            <p>Figma, Photoshop, Premiere, XD, Google Optimize, VWO</p>
-            <h2 class="type bump">Analytics</h2>
-            <p>Datastudio, Google Analytics, Tag Manager, funnel.io, Supermetrics</p>
-            <h2 class="type bump">SEO</h2>
-            <p>Ahrefs, SEMrush, Sitebulb, Screaming Frog, Sistrix, Moz, URL&nbsp;profiler, Search Metrics</p>
-          </div>
-          <div class="column">
-            <h2 class="type">Development</h2>
-            <p>Git, npm, Jest, VSCode, Chrome Dev Tools, Responsively, Regex101</p>
-            <h2 class="type">Project Management</h2>
-            <p >Asana, Monday, Notion, Trello, Clockify, Slack, Teams, G Suite</p>
-            <h2 class="type">Nocode</h2>
-            <p >Airtable, Webflow, Zapier, Memberstack, Apify, Hubspot, Parabola, Typeform</p>
-          </div>
-        </div>
-        </div>
-        </div>
-      </div>
-      </section>
-
-<!--Testimonials-->
-<section id="words" class="words">
-  <div class="container">
-  <div class="content-section">
-    <div class="left-grid-column">
-      <div class="sub-heading">Kinds words
-    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
-          </div>
-      </div>
-      <div class="right-grid-column">
-            <div class="testimonial-inner">
-              <div id="splide2" class="splide">
-                <div class="splide__track">
-                  <ul class="splide__list">
-                    <li class="splide__slide">
-                      <div class="testimonial-container">
-                      <p>"Adam is the real deal. From a commercial standpoint, his approach to strategy is thoughtful and rooted in a genuine passion for problem solving. He always goes above and beyond, comfortable stepping outside of his lane to help where needed. Having him as an extended part of our team has fundamentally shifted my views on embedded consulting."</p>
-                      <a class="testimonial-link" href="https://www.linkedin.com/in/jovos/">
-                      <div class="testimonial-wrapper">
-                      <div class="testimonial-image">
-                      <img src="images/home/testimonials/jo.jpeg">
-                      </div>
-                      <div class="testimonial-name">
-                      <h3>Jo Vos</h3>
-                      <h6>CMO, imaware™</h6>
-                      <img class="li-icon" src="images/home/icons/linkedin-icon.png"/>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="testimonial-container">
-                      <p>"Adam is a fantastic person to work with. He has extensive knowledge in building high performing websites... From the start, he was very articulate and did a fantastic job presenting a roadmap on how we would work together to improve our site\'s SEO. He is super patient, knowledgeable, and has excellent client relationship skills."</p>
-                      <a class="testimonial-link" href="https://www.linkedin.com/in/amirmxt/">
-                      <div class="testimonial-wrapper">
-                      <div class="testimonial-image">
-                      <img src="images/home/testimonials/amir.jpeg">
-                      </div>
-                      <div class="testimonial-name">
-                      <h3>Amir M</h3>
-                      <h6>CEO, Blackcreek.io</h6>
-                      <img class="li-icon" src="images/home/icons/linkedin-icon.png"/>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="testimonial-container">
-                      <p>"Adam made a tremendous difference advancing SEO for Interflora\'s brands - he possesses a naturally curious mind to deliver measured improvement at pace, with real passion. It was a real pleasure working with Adam. I would have no hesitation in recommending the talent he would bring to organisations big or small."</p>
-                      <a class="testimonial-link" href="https://www.linkedin.com/in/benfreeborn/">
-                      <div class="testimonial-wrapper">
-                      <div class="testimonial-image">
-                      <img src="images/home/testimonials/ben.jpeg">
-                      </div>
-                      <div class="testimonial-name">
-                      <h3>Ben Freeborn</h3>
-                      <h6>Head of Customer Experience, Interflora</h6>
-                      <img class="li-icon" src="images/home/icons/linkedin-icon.png"/>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="testimonial-container">
-                      <p>"We asked Adam to carry out an audit of our website to uncover it\'s weaknesses and on his findings implement a strategy to grow traffic and revenue. In short we have found Adams advice absolutely invaluable and have absolutely no hesitation in thoroughly recommending his skills."</p>
-                      <a class="testimonial-link" href="https://www.linkedin.com/in/simon-porter-3a982b40/">
-                      <div class="testimonial-wrapper">
-                      <div class="testimonial-image">
-                      <img src="images/home/testimonials/simon.jpeg">
-                      </div>
-                      <div class="testimonial-name">
-                      <h3>Simon Porter</h3>
-                      <h6>Director, James Porter & Son</h6>
-                      <img class="li-icon" src="images/home/icons/linkedin-icon.png"/>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="testimonial-container">
-                      <p>"Adam is a superstar and a total delight to work with.  He is trustworthy, eminently likeable, but above all, he is talented, creative and understands the commercial imperative behind what he is being asked to do. He has worked within an agency and in-house, giving him a huge amount of insight and empathy into what businesses are looking for."</p>
-                      <a class="testimonial-link" href="https://www.linkedin.com/in/wendy-shand-95999525/">
-                      <div class="testimonial-wrapper">
-                      <div class="testimonial-image">
-                      <img src="images/home/testimonials/wendy.jpeg">
-                      </div>
-                      <div class="testimonial-name">
-                      <h3>Wendy Shand</h3>
-                      <h6>Founder, Tots to Travel</h6>
-                      <img class="li-icon" src="images/home/icons/linkedin-icon.png"/>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="testimonial-container">
-                      <p>"Adam is such a joy to work with. He\'s a professional whiz, offering clear direction and solid SEO advice. He\'s also kind, funny and empathetic. He gets into readers heads, and he understands writers and their needs. As a freelancer, I love working with Adam because his stellar communication skills make it easy."</p>
-                      <a class="testimonial-link" href="https://www.linkedin.com/in/devonscoble/">
-                      <div class="testimonial-wrapper">
-                      <div class="testimonial-image">
-                      <img src="images/home/testimonials/devon.jpeg">
-                      </div>
-                      <div class="testimonial-name">
-                      <h3>Devon Scoble</h3>
-                      <h6>Head Of Content, imaware™</h6>
-                      <img class="li-icon" src="images/home/icons/linkedin-icon.png"/>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    </li>
-                    <li class="splide__slide">
-                      <div class="testimonial-container">
-                      <p>"I worked with Adam and he was right up there with the best SEO specialists I've had the pleasure of working alongside. Not just that but he has a true passion for the area and was constantly introducing me to new bits of tech he'd read about. An absolute top man and true expert in his field."</p>
-                      <a class="testimonial-link" href="https://www.linkedin.com/in/andrew-land-982b329/">
-                      <div class="testimonial-wrapper">
-                      <div class="testimonial-image">
-                      <img src="images/home/testimonials/andy.jpeg">
-                      </div>
-                      <div class="testimonial-name">
-                      <h3>Andrew Land</h3>
-                      <h6>Senior Email & CRM Manager, Conde Nast</h6>
-                      <img class="li-icon" src="images/home/icons/linkedin-icon.png"/>
-                      </div>
-                      </div>
-                      </a>
-                    </div>
-                    </li>
-                    
-                  </ul>
-                  <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev">
-                      <img src="images/home/icons/arrow-right.svg">
-                    </button>
-                    </button>
-                    <button class="splide__arrow splide__arrow--next">
-                      <img src="images/home/icons/arrow-right.svg">
-                    </button>
-                  </div>  
-                </div>
-              </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-
-<!--Worked with-->
-            <section id="about" class="about">
-              <div class="container">
-              <div class="content-section">
-                <div class="left-grid-column">
-                  <div class="sub-heading">Worked with
-            <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
-                  </div>
-                </div>
-                  <div class="right-grid-column">
-                    <div class="parent">
-                      <div><img class="worked-logo ecoski" src="images/home/worked-logos/ecoski.png"/> </div>
-                      <div><img class="worked-logo" src="images/home/worked-logos/interflora.png"/> </div>
-                      <div><img class="worked-logo zoe-image" src="images/home/worked-logos/ZOE.jpeg"/> </div>
-                      <div><img class="worked-logo blackcreek" src="images/home/worked-logos/blackcreek.png"/> </div>
-                      <div><img class="worked-logo imaware" src="images/home/worked-logos/imaware.png"/> </div>
-                      <div><img class="worked-logo" src="images/home/worked-logos/cips.png"/> </div>
-                      <div><img class="worked-logo" src="images/home/worked-logos/sunny.png"/> </div>
-                      <div><img class="worked-logo geotab-image" src="images/home/worked-logos/geotab.png"/> </div>
-                      <div><img class="worked-logo tots" src="images/home/worked-logos/tots-to-travel.png"/> </div>
-                      <div><img class="worked-logo" src="images/home/worked-logos/ukbride.png"/> </div>
-                      <div><img class="worked-logo johnsons" src="images/home/worked-logos/johnsons.png"/> </div>
-                      <div><img class="worked-logo bootcamp" src="images/home/worked-logos/bootcamp.png"/> </div>
-                      </div>
-                  </div>
-                </div>
-                </div>
-            </section>
-
-<!--blogs-->
-    <section id="blogs" class="blogs">
-      <div class="container">
-      <div class="content-section">
-        <div class="left-grid-column">
-          <div class="sub-heading">Blog posts
-    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
-          </div>
-        </div>
-          <div class="right-grid-column">
-            <div class="blogs-wrapper">
-            <div class="blog-card">
-              <img class="blog-image" src="images/home/bookmarlet.jpeg"/>
-              <div class="blog-container">
-                <p class="read-time">5 minute read</p>
-              <h3 class="blog-title">5 Reasons Why I Think Webflow Is Godlike for SEO</h3>
-              <p class="excerpt">Webflow taught me to code and showed me the real potential of an being empowered as an SEO.</p>
-              <div class="social-item project-link">
-                <a class="item-link" href="https://medium.com/@addurrant/5-reasons-why-i-think-webflow-is-godlike-for-seo-354ae5196827"
-                  ><span class="blog-link">View full story</span>
-                  <img 
-                    class="social-arrow"
-                    src="images/home/arrow-right.svg"
-                  />
-                </a>
-              </div>
-            </div>
-            </div>
-            <div class="blog-card">
-              <img class="blog-image" src="images/home/webflow-seo.jpg"/>
-              <div class="blog-container">
-                <p class="read-time">7 minute read</p>
-              <h3 class="blog-title">15 Tried & Tested Bookmarklets For SEO's</h3>
-              <p class="excerpt">A collection of the best bookmarklets to turn tedious SEO tasks into a single click.</p>
-              <div class="social-item project-link">
-                <a class="item-link" href="https://medium.com/@addurrant/15-tried-tested-bookmarklets-to-make-seos-efficient-af-c73dc239908d"
-                  ><span class="blog-link">View full story</span>
-                  <img 
-                    class="social-arrow"
-                    src="images/home/arrow-right.svg"
-                  />
-                </a>
-              </div>
-            </div>
-            </div>
-            </div>
-            <div class="blogs-wrapper">
-              <div class="blog-card">
-                <img class="blog-image" src="images/home/github.jpeg"/>
-                <div class="blog-container">
-                  <p class="read-time">12 minute read</p>
-                <h3 class="blog-title">How to use Git & Github — The easiest intro ever</h3>
-                <p class="excerpt">A beginners guide to Git and Github written by a digital marketer. Spoiler, both are super powerful tools!</p>
-                <div class="social-item project-link">
-                  <a class="item-link" href="https://addurrant.medium.com/how-to-use-github-fbe22bea7d57"
-                    ><span class="blog-link">View full story</span>
-                    <img 
-                      class="social-arrow"
-                      src="images/home/arrow-right.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-              </div>
-              <div class="blog-card">
-                <img class="blog-image" src="images/home/voice-search.jpg"/>
-                <div class="blog-container">
-                  <p class="read-time">10 minute read</p>
-                <h3 class="blog-title">How to optimize your local business for voice search</h3>
-                <p class="excerpt">A quick strategic guide to optimising a local business for voice search using structured data.</p>
-                <div class="social-item project-link">
-                  <a class="item-link" href="https://www.searchenginewatch.com/2018/11/20/optimize-local-business-voice-search/"
-                    ><span class="blog-link">View full story</span>
-                    <img 
-                      class="social-arrow"
-                      src="images/home/arrow-right.svg"
-                    />
-                  </a>
-                </div>
-              </div>
-              </div>
-              </div>
-          </div>
-          </div>
-        </div>
-        </div>
-    </section>
-
-<!--Contact-->
-<section id="contact" class="contact">
-  <div class="container">
-  <div class="content-section">
-    <div class="left-grid-column">
-      <div class="sub-heading">Reach out
-    <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
-          </div>
-      </div>
-      <div class="right-grid-column">
-        <p>
-          I'm no longer available for fully managed SEO services but i'm always happy to help so please reach out, ask questions, say hi and i'll get back to you.
-        </p>
-        <ul class="social-icons">
+      <!--menu-->
+      <header class="header">
+        <a href="" class="logo">A.Durrant</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+          <span class="navicon"></span>
+        </label>
+        <ul class="menu">
           <li>
-            <a href="https://www.linkedin.com/in/adam-durrant/"
-              ><i class="fab fa-linkedin-in" aria-hidden="true"></i
-            ></a>
+            <a class="nav-item" href="/">Home</a>
           </li>
           <li>
-            <a href="https://github.com/adamddurrant"
-              ><i class="fab fa-github" aria-hidden="true"></i
-            ></a>
+            <a onclick="toggleOff()" class="nav-item" href="#about">About</a>
           </li>
           <li>
-            <a href="https://medium.com/@addurrant"
-              ><i class="fab fa-medium" aria-hidden="true"></i
-            ></a>
+            <a onclick="toggleOff()" class="nav-item" href="#coding-projects">Projects</a>
           </li>
           <li>
-            <a href="https://twitter.com/adamddurrant"
-              ><i class="fab fa-twitter" aria-hidden="true"></i
-            ></a>
+            <a onclick="toggleOff()" class="nav-item" href="#blogs">Blogs</a>
+          </li>
+          <li class="contact-nav">
+            <a onclick="toggleOff()" class="nav-item" href="#contact">Contact</a>
           </li>
         </ul>
-        <form id="main-form" action="https://formspree.io/f/xlevwzjl" method="POST">
-          <input
-            type="text"
-            id="name"
-            name="user_name"
-            placeholder="Name.."
-            required
-          />
-          <input
-            type="email"
-            id="mail"
-            name="user_mail"
-            placeholder="Email.."
-            required
-          />
-          <textarea
-            id="msg"
-            name="user_message"
-            placeholder="Your message.."
-            required
-          ></textarea>
-          <div class="social-item">
-            <div id="captcha" class="g-recaptcha brochure__form__captcha" data-sitekey="6LcppbgjAAAAADicngOWi9i0mbIZg6BvP7mYJrjA"></div>
-            <button id="submitRequest" class="form-button item-link" data-action='submit' data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'>
-              <span id="captcha-error" style="color:red" /></span>
-              Send your message<img
-                class="social-arrow"
-                src="images/home/arrow-right.svg"
-              />
-            </button>
+        <div class="contact-button">
+          <a href="#contact">Reach out</a>
+        </div>
+      </header>
+      <!--hero-->
+      <section class="intro">
+        <div class="container">
+          <div class="wrapper">
+            <div class="intro-grid">
+              <div class="col col-1">
+                <div class="first-col-content">
+                  <h1> Hi, I'm Adam. </br><span class="hero-text">An SEO specialist & aspiring <img src="images/home/meta-icon.png"> certified front end developer. </span>
+                  </h1>
+                  <div class="socials">
+                    <div class="social-item">
+                      <a class="item-link" href="https://www.linkedin.com/in/adam-durrant/">
+                        <span>Linkedin</span>
+                        <img class="social-arrow" src="images/home/arrow-right.svg" />
+                      </a>
+                    </div>
+                    <div class="social-item">
+                      <a class="item-link" href="images/home/A Durrant Resume.pdf">
+                        <span>Resume</span>
+                        <img class="social-arrow" src="images/home/arrow-right.svg" />
+                      </a>
+                    </div>
+                    <div class="social-item">
+                      <a class="item-link" href="#coding-projects">
+                        <span>Projects</span>
+                        <img class="social-arrow" src="images/home/arrow-right.svg" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-2">
+                <img class="profile" src="images/home/profile-pic.png" />
+              </div>
+            </div>
           </div>
-        </form>
         </div>
-        </div>
-      </div>
+        <h3 class="toolkit-heading">Front-end stack</h3>
+        <ul class="skills">
+          <li>
+            <img src="images/home/icons/html.svg" alt="HTML5 logo" />HTML5
+          </li>
+          <li>
+            <img src="images/home/icons/css.svg" alt="CSS3 logo" />CSS3
+          </li>
+          <li>
+            <img src="images/home/icons/javascript.svg" alt="Javascript logo" />JS
+          </li>
+          <li>
+            <img src="images/home/icons/react.svg" alt="React logo" />React
+          </li>
+          <li>
+            <img src="images/home/icons/tailwind.svg" alt="Tailwind logo" />Tailwind
+          </li>
+          <li>
+            <img src="images/home/icons/webflow.svg" alt="Webflow logo" />Webflow
+          </li>
+          <li>
+            <img src="images/home/icons/github.svg" alt="Github logo" />Github
+          </li>
+          <li>
+            <img src="images/home/icons/firebase.svg" alt="Firebase logo" />Firebase
+          </li>
+        </ul>
       </section>
-
-    <footer>
-      <p class="footer-message">Built by Adam Durrant ✌️</p>
-    </footer>
-  </div>
-   <script src='https://www.google.com/recaptcha/api.js'></script>
-   <script>
-    function get_action(form) 
-    {
-       var v = grecaptcha.getResponse();
-       if(v.length == 0)
-       {
-           document.getElementById('captcha-error').innerHTML="You can't leave Captcha Code empty";
-           return false;
-       }
-       else
-       {
-            document.getElementById('captcha-error').innerHTML="Captcha completed";
-           return true; 
-       }
-   }
-   </script>
-    
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <script>
-    let messageBox = document.getElementById('msg');
-    let captcha = document.getElementById('captcha');
-    messageBox.addEventListener("click", function() {
-      captcha.style.display = "block";
-    }); //captcha reveal
-    </script>
-  <script> //multiple splide initialisations
-    var splide = new Splide( '#splide1' , {
-      gap: '2rem'
-    } );
-    splide.mount();
-
-    var splide2 = new Splide( '#splide2' , {
-      gap: '2rem'
-    } );
-    splide2.mount();
-  </script>
-  <script>
-  function toggleOff() { //toggles menu on button click
-  document.getElementById('menu-btn').checked = false;
-  }
-  </script>
+      <!--about-->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="content-section">
+            <div class="left-grid-column">
+              <div class="sub-heading">About me <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+              </div>
+            </div>
+            <div class="right-grid-column">
+              <p>👋 I'm Adam Durrant, I have almost a decade of experience as an SEO specialist. I've worked freelance, in-house and agency-side for startups, SMEs and big corporations like; <span class="mini-icon">
+                  <img src="/images/home/icons/geotab.png">
+                </span>
+                <span class="geotab">Geotab</span>, <span class="mini-icon">
+                  <img src="/images/home/icons/interflora.jpeg">
+                </span>
+                <span class="interflora">Interflora</span> and <span class="mini-icon">
+                  <img src="/images/home/icons/zoe.jpeg">
+                </span>
+                <span class="zoe">ZOE</span>.
+              </p>
+              <p> Myself and my work have been featured in; <span class="mini-icon">
+                  <img src="/images/home/icons/sew.png">
+                </span>
+                <span class="sew">Search Engine Watch</span>, <span class="mini-icon">
+                  <img src="/images/home/icons/ttt.png">
+                </span>
+                <span class="ttt">Traffic Think Tank</span>, <span class="mini-icon">
+                  <img src="/images/home/icons/seofomo.png">
+                </span>SEO FOMO & <span class="mini-icon">
+                  <img class="oncrawl" src="/images/home/icons/oncrawl.png">
+                </span>
+                <span class="oncrawl">Oncrawl</span>. For as long as I can remember I have been passionate about the web and fascinated by code.
+              </p>
+              <p> After achieving high in my current profession, my next ambition is to transition my career from marketing to engineering. I am currently studying, building projects and looking for my first junior front-end web development role. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Projects-->
+      <section id="coding-projects" class="coding-projects">
+        <div class="container">
+          <div class="content-section">
+            <div class="left-grid-column">
+              <div class="sub-heading">Coding projects <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+              </div>
+            </div>
+            <div class="right-grid-column">
+              <div class="project-inner">
+                <div id="splide1" class="splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="project-item" href="/projects/shopping-list">
+                          <div class="project-info">
+                            <h3 class="project-title">Shopping List App</h3>
+                            <p class="project-description"> A real-time shopping list CRUD application built with HTML, CSS, vanilla Javascript & Firebase database. </p>
+                            <ul class="skills-used">
+                              <li>
+                                <img src="images/home/icons/html.svg" alt="HTML5 logo" />
+                              </li>
+                              <li>
+                                <img src="images/home/icons/css.svg" alt="CSS3 logo" />
+                              </li>
+                              <li>
+                                <img src="images/home/icons/javascript.svg" alt="JS logo" />
+                              </li>
+                              <li>
+                                <img src="images/home/icons/firebase.svg" alt="Firebase logo" />
+                              </li>
+                            </ul>
+                            <div class="project-links">
+                              <div class="social-item project-link">
+                                <a class="item-link" href="/projects/shopping-list">
+                                  <span>View project</span>
+                                  <img class="social-arrow" src="images/home/arrow-right.svg" />
+                                </a>
+                              </div>
+                              <div class="social-item project-link">
+                                <a class="item-link" href="https://github.com/adamddurrant/shopping-list">
+                                  <span>View code</span>
+                                  <img class="social-arrow" src="images/home/arrow-right.svg" />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-image">
+                            <img class="project-image" src="/images/home/shopping-list-project.png" />
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="project-item">
+                          <div class="project-info">
+                            <h3 class="project-title">SEO Toolbox App</h3>
+                            <p class="project-description"> A curated SEO resources web app. Made using React, Tailwind, a local database file and basic Framer Motion. </p>
+                            <ul class="skills-used">
+                              <li>
+                                <img class="project-icons" src="images/home/icons/html.svg" alt="Webflow logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/tailwind.svg" alt="zapier logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/react.svg" alt="tweetpik logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/framer.svg" alt="Twitter logo" />
+                              </li>
+                            </ul>
+                            <div class="project-links">
+                              <div class="social-item project-link">
+                                <a class="item-link" href="https://resources-project.vercel.app/">
+                                  <span>View project</span>
+                                  <img class="social-arrow" src="images/home/arrow-right.svg" />
+                                </a>
+                              </div>
+                              <div class="social-item project-link">
+                                <a class="item-link" href="https://github.com/adamddurrant/resources-project">
+                                  <span>View code</span>
+                                  <img class="social-arrow" src="images/home/arrow-right.svg" />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-image">
+                            <img class="project-image" src="/images/home/resources-project.png" />
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="project-item">
+                          <div class="project-info">
+                            <h3 class="project-title">Popular Movies App</h3>
+                            <p class="project-description"> Popular movie web app updated weekly with movie titles. Built with the TMDb API, HTML, Tailwind CSS and React. </p>
+                            <ul class="skills-used">
+                              <li>
+                                <img class="project-icons" src="images/home/icons/html.svg" alt="HTML logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/tailwind.svg" alt="Tailwind logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/react.svg" alt="React logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/framer.svg" alt="React logo" />
+                              </li>
+                            </ul>
+                            <div class="project-links">
+                              <div class="social-item project-link">
+                                <a class="item-link" href="https://movie-filtering.vercel.app/">
+                                  <span>View project</span>
+                                  <img class="social-arrow" src="images/home/arrow-right.svg" />
+                                </a>
+                              </div>
+                              <div class="social-item project-link">
+                                <a class="item-link" href="https://github.com/adamddurrant/movie-filtering">
+                                  <span>View code</span>
+                                  <img class="social-arrow" src="images/home/arrow-right.svg" />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-image">
+                            <img class="project-image" src="/images/home/top-100-movies.png" />
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="project-item">
+                          <div class="project-info">
+                            <h3 class="project-title">Twitter Curation App</h3>
+                            <p class="project-description"> An automated twitter curation web app & newsletter. Built with Webflow, Zapier, Tweetpik & TwitterAPI. </p>
+                            <ul class="skills-used">
+                              <li>
+                                <img class="project-icons" src="images/home/icons/webflow.svg" alt="Webflow logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/zapier.svg" alt="zapier logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/tweetpik.svg" alt="tweetpik logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/twitter.svg" alt="Twitter logo" />
+                              </li>
+                            </ul>
+                            <div class="project-links">
+                              <div class="social-item project-link">
+                                <a class="item-link" href="https://www.producthunt.com/products/seotweets">
+                                  <span>View project</span>
+                                  <img class="social-arrow" src="images/home/arrow-right.svg" />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-image">
+                            <img class="project-image" src="/images/home/seotweets.png" />
+                          </div>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="project-item">
+                          <div class="project-info">
+                            <h3 class="project-title">Academy Of Ballet Site</h3>
+                            <p class="project-description"> Functioning website for the Peterborough City Academy of Ballet made using HTML, CSS & Webflow. </p>
+                            <ul class="skills-used">
+                              <li>
+                                <img class="project-icons" src="images/home/icons/html.svg" alt="HTML logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/css.svg" alt="CSS logo" />
+                              </li>
+                              <li>
+                                <img class="project-icons" src="images/home/icons/webflow.svg" alt="Webflow logo" />
+                              </li>
+                            </ul>
+                            <div class="project-links">
+                              <div class="social-item project-link">
+                                <a class="item-link" href="https://www.cityacademyofballet.co.uk/">
+                                  <span>View project</span>
+                                  <img class="social-arrow" src="images/home/arrow-right.svg" />
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="project-image">
+                            <img class="project-image" src="/images/home/city-academy.png" />
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="splide__arrows">
+                      <button class="splide__arrow splide__arrow--prev">
+                        <img src="images/home/icons/arrow-right.svg">
+                      </button>
+                      <button class="splide__arrow splide__arrow--next">
+                        <img src="images/home/icons/arrow-right.svg">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--tools-->
+      <section id="tools" class="tools">
+        <div class="container">
+          <div class="content-section">
+            <div class="left-grid-column">
+              <div class="sub-heading">Tool stack <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+              </div>
+            </div>
+            <div class="right-grid-column">
+              <div class="row">
+                <div class="column">
+                  <h2 class="type">Design</h2>
+                  <p>Figma, Photoshop, Premiere, XD, Google Optimize, VWO</p>
+                  <h2 class="type bump">Analytics</h2>
+                  <p>Datastudio, Google Analytics, Tag Manager, funnel.io, Supermetrics</p>
+                  <h2 class="type bump">SEO</h2>
+                  <p>Ahrefs, SEMrush, Sitebulb, Screaming Frog, Sistrix, Moz, URL&nbsp;profiler, Search Metrics</p>
+                </div>
+                <div class="column">
+                  <h2 class="type">Development</h2>
+                  <p>Git, npm, Jest, VSCode, Chrome Dev Tools, Responsively, Regex101</p>
+                  <h2 class="type">Project Management</h2>
+                  <p>Asana, Monday, Notion, Trello, Clockify, Slack, Teams, G Suite</p>
+                  <h2 class="type">Nocode</h2>
+                  <p>Airtable, Webflow, Zapier, Memberstack, Apify, Hubspot, Parabola, Typeform</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Testimonials-->
+      <section id="words" class="words">
+        <div class="container">
+          <div class="content-section">
+            <div class="left-grid-column">
+              <div class="sub-heading">Kinds words <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+              </div>
+            </div>
+            <div class="right-grid-column">
+              <div class="testimonial-inner">
+                <div id="splide2" class="splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="testimonial-container">
+                          <p>"Adam is the real deal. From a commercial standpoint, his approach to strategy is thoughtful and rooted in a genuine passion for problem solving. He always goes above and beyond, comfortable stepping outside of his lane to help where needed. Having him as an extended part of our team has fundamentally shifted my views on embedded consulting."</p>
+                          <a class="testimonial-link" href="https://www.linkedin.com/in/jovos/">
+                            <div class="testimonial-wrapper">
+                              <div class="testimonial-image">
+                                <img src="images/home/testimonials/jo.jpeg">
+                              </div>
+                              <div class="testimonial-name">
+                                <h3>Jo Vos</h3>
+                                <h6>CMO, imaware™</h6>
+                                <img class="li-icon" src="images/home/icons/linkedin-icon.png" />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="testimonial-container">
+                          <p>"Adam is a fantastic person to work with. He has extensive knowledge in building high performing websites... From the start, he was very articulate and did a fantastic job presenting a roadmap on how we would work together to improve our site\'s SEO. He is super patient, knowledgeable, and has excellent client relationship skills."</p>
+                          <a class="testimonial-link" href="https://www.linkedin.com/in/amirmxt/">
+                            <div class="testimonial-wrapper">
+                              <div class="testimonial-image">
+                                <img src="images/home/testimonials/amir.jpeg">
+                              </div>
+                              <div class="testimonial-name">
+                                <h3>Amir M</h3>
+                                <h6>CEO, Blackcreek.io</h6>
+                                <img class="li-icon" src="images/home/icons/linkedin-icon.png" />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="testimonial-container">
+                          <p>"Adam made a tremendous difference advancing SEO for Interflora\'s brands - he possesses a naturally curious mind to deliver measured improvement at pace, with real passion. It was a real pleasure working with Adam. I would have no hesitation in recommending the talent he would bring to organisations big or small."</p>
+                          <a class="testimonial-link" href="https://www.linkedin.com/in/benfreeborn/">
+                            <div class="testimonial-wrapper">
+                              <div class="testimonial-image">
+                                <img src="images/home/testimonials/ben.jpeg">
+                              </div>
+                              <div class="testimonial-name">
+                                <h3>Ben Freeborn</h3>
+                                <h6>Head of Customer Experience, Interflora</h6>
+                                <img class="li-icon" src="images/home/icons/linkedin-icon.png" />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="testimonial-container">
+                          <p>"We asked Adam to carry out an audit of our website to uncover it\'s weaknesses and on his findings implement a strategy to grow traffic and revenue. In short we have found Adams advice absolutely invaluable and have absolutely no hesitation in thoroughly recommending his skills."</p>
+                          <a class="testimonial-link" href="https://www.linkedin.com/in/simon-porter-3a982b40/">
+                            <div class="testimonial-wrapper">
+                              <div class="testimonial-image">
+                                <img src="images/home/testimonials/simon.jpeg">
+                              </div>
+                              <div class="testimonial-name">
+                                <h3>Simon Porter</h3>
+                                <h6>Director, James Porter & Son</h6>
+                                <img class="li-icon" src="images/home/icons/linkedin-icon.png" />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="testimonial-container">
+                          <p>"Adam is a superstar and a total delight to work with. He is trustworthy, eminently likeable, but above all, he is talented, creative and understands the commercial imperative behind what he is being asked to do. He has worked within an agency and in-house, giving him a huge amount of insight and empathy into what businesses are looking for."</p>
+                          <a class="testimonial-link" href="https://www.linkedin.com/in/wendy-shand-95999525/">
+                            <div class="testimonial-wrapper">
+                              <div class="testimonial-image">
+                                <img src="images/home/testimonials/wendy.jpeg">
+                              </div>
+                              <div class="testimonial-name">
+                                <h3>Wendy Shand</h3>
+                                <h6>Founder, Tots to Travel</h6>
+                                <img class="li-icon" src="images/home/icons/linkedin-icon.png" />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="testimonial-container">
+                          <p>"Adam is such a joy to work with. He\'s a professional whiz, offering clear direction and solid SEO advice. He\'s also kind, funny and empathetic. He gets into readers heads, and he understands writers and their needs. As a freelancer, I love working with Adam because his stellar communication skills make it easy."</p>
+                          <a class="testimonial-link" href="https://www.linkedin.com/in/devonscoble/">
+                            <div class="testimonial-wrapper">
+                              <div class="testimonial-image">
+                                <img src="images/home/testimonials/devon.jpeg">
+                              </div>
+                              <div class="testimonial-name">
+                                <h3>Devon Scoble</h3>
+                                <h6>Head Of Content, imaware™</h6>
+                                <img class="li-icon" src="images/home/icons/linkedin-icon.png" />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="testimonial-container">
+                          <p>"I worked with Adam and he was right up there with the best SEO specialists I've had the pleasure of working alongside. Not just that but he has a true passion for the area and was constantly introducing me to new bits of tech he'd read about. An absolute top man and true expert in his field."</p>
+                          <a class="testimonial-link" href="https://www.linkedin.com/in/andrew-land-982b329/">
+                            <div class="testimonial-wrapper">
+                              <div class="testimonial-image">
+                                <img src="images/home/testimonials/andy.jpeg">
+                              </div>
+                              <div class="testimonial-name">
+                                <h3>Andrew Land</h3>
+                                <h6>Senior Email & CRM Manager, Conde Nast</h6>
+                                <img class="li-icon" src="images/home/icons/linkedin-icon.png" />
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="splide__arrows">
+                      <button class="splide__arrow splide__arrow--prev">
+                        <img src="images/home/icons/arrow-right.svg">
+                      </button>
+                      <button class="splide__arrow splide__arrow--next">
+                        <img src="images/home/icons/arrow-right.svg">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Worked with-->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="content-section">
+            <div class="left-grid-column">
+              <div class="sub-heading">Worked with <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+              </div>
+            </div>
+            <div class="right-grid-column">
+              <div class="parent">
+                <div>
+                  <img class="worked-logo ecoski" src="images/home/worked-logos/ecoski.png" />
+                </div>
+                <div>
+                  <img class="worked-logo" src="images/home/worked-logos/interflora.png" />
+                </div>
+                <div>
+                  <img class="worked-logo zoe-image" src="images/home/worked-logos/ZOE.jpeg" />
+                </div>
+                <div>
+                  <img class="worked-logo blackcreek" src="images/home/worked-logos/blackcreek.png" />
+                </div>
+                <div>
+                  <img class="worked-logo imaware" src="images/home/worked-logos/imaware.png" />
+                </div>
+                <div>
+                  <img class="worked-logo" src="images/home/worked-logos/cips.png" />
+                </div>
+                <div>
+                  <img class="worked-logo" src="images/home/worked-logos/sunny.png" />
+                </div>
+                <div>
+                  <img class="worked-logo geotab-image" src="images/home/worked-logos/geotab.png" />
+                </div>
+                <div>
+                  <img class="worked-logo tots" src="images/home/worked-logos/tots-to-travel.png" />
+                </div>
+                <div>
+                  <img class="worked-logo" src="images/home/worked-logos/ukbride.png" />
+                </div>
+                <div>
+                  <img class="worked-logo johnsons" src="images/home/worked-logos/johnsons.png" />
+                </div>
+                <div>
+                  <img class="worked-logo bootcamp" src="images/home/worked-logos/bootcamp.png" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--blogs-->
+      <section id="blogs" class="blogs">
+        <div class="container">
+          <div class="content-section">
+            <div class="left-grid-column">
+              <div class="sub-heading">Blog posts <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+              </div>
+            </div>
+            <div class="right-grid-column">
+              <div class="blogs-wrapper">
+                <div class="blog-card">
+                  <img class="blog-image" src="images/home/bookmarlet.jpeg" />
+                  <div class="blog-container">
+                    <p class="read-time">5 minute read</p>
+                    <h3 class="blog-title">5 Reasons Why I Think Webflow Is Godlike for SEO</h3>
+                    <p class="excerpt">Webflow taught me to code and showed me the real potential of an being empowered as an SEO.</p>
+                    <div class="social-item project-link">
+                      <a class="item-link" href="https://medium.com/@addurrant/5-reasons-why-i-think-webflow-is-godlike-for-seo-354ae5196827">
+                        <span class="blog-link">View full story</span>
+                        <img class="social-arrow" src="images/home/arrow-right.svg" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-card">
+                  <img class="blog-image" src="images/home/webflow-seo.jpg" />
+                  <div class="blog-container">
+                    <p class="read-time">7 minute read</p>
+                    <h3 class="blog-title">15 Tried & Tested Bookmarklets For SEO's</h3>
+                    <p class="excerpt">A collection of the best bookmarklets to turn tedious SEO tasks into a single click.</p>
+                    <div class="social-item project-link">
+                      <a class="item-link" href="https://medium.com/@addurrant/15-tried-tested-bookmarklets-to-make-seos-efficient-af-c73dc239908d">
+                        <span class="blog-link">View full story</span>
+                        <img class="social-arrow" src="images/home/arrow-right.svg" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blogs-wrapper">
+                <div class="blog-card">
+                  <img class="blog-image" src="images/home/github.jpeg" />
+                  <div class="blog-container">
+                    <p class="read-time">12 minute read</p>
+                    <h3 class="blog-title">How to use Git & Github — The easiest intro ever</h3>
+                    <p class="excerpt">A beginners guide to Git and Github written by a digital marketer. Spoiler, both are super powerful tools!</p>
+                    <div class="social-item project-link">
+                      <a class="item-link" href="https://addurrant.medium.com/how-to-use-github-fbe22bea7d57">
+                        <span class="blog-link">View full story</span>
+                        <img class="social-arrow" src="images/home/arrow-right.svg" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-card">
+                  <img class="blog-image" src="images/home/voice-search.jpg" />
+                  <div class="blog-container">
+                    <p class="read-time">10 minute read</p>
+                    <h3 class="blog-title">How to optimize your local business for voice search</h3>
+                    <p class="excerpt">A quick strategic guide to optimising a local business for voice search using structured data.</p>
+                    <div class="social-item project-link">
+                      <a class="item-link" href="https://www.searchenginewatch.com/2018/11/20/optimize-local-business-voice-search/">
+                        <span class="blog-link">View full story</span>
+                        <img class="social-arrow" src="images/home/arrow-right.svg" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Contact-->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="content-section">
+            <div class="left-grid-column">
+              <div class="sub-heading">Reach out <lottie-player src="https://lottie.host/fbcf0b0e-da3d-4bac-812f-9cc3d571d7ac/RanzGc9qGd.json" background="transparent" speed="1" style="width: 30%; height: 30px;" loop autoplay></lottie-player>
+              </div>
+            </div>
+            <div class="right-grid-column">
+              <p> I'm no longer available for fully managed SEO services but i'm always happy to help so please reach out, ask questions, say hi and i'll get back to you. </p>
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/adam-durrant/">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/adamddurrant">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://medium.com/@addurrant">
+                    <i class="fab fa-medium" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/adamddurrant">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+              <form id="main-form" action="https://formspree.io/f/xlevwzjl" method="POST">
+                <input type="text" id="name" name="user_name" placeholder="Name.." required />
+                <input type="email" id="mail" name="user_mail" placeholder="Email.." required />
+                <textarea id="msg" name="user_message" placeholder="Your message.." required></textarea>
+                <div class="g-recaptcha" id="captcha" data-sitekey="6Lf1pdgUAAAAAHKdh97jvJYRh0fC8Hp6HRlTlGv1"></div>
+                <input class="form-submit" type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p class="footer-message">Built by Adam Durrant ✌️</p>
+      </footer>
+      <script>
+        window.onload = function() {
+          var el = document.getElementById('g-recaptcha-response');
+          if (el) {
+            el.setAttribute('required', 'required');
+          }
+        }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+      <script>
+        let messageBox = document.getElementById('msg');
+        let captcha = document.getElementById('captcha');
+        messageBox.addEventListener("click", function() {
+          captcha.style.display = "block";
+        }); //captcha reveal
+      </script>
+      <script>
+        //multiple splide initialisations
+        var splide = new Splide('#splide1', {
+          gap: '2rem'
+        });
+        splide.mount();
+        var splide2 = new Splide('#splide2', {
+          gap: '2rem'
+        });
+        splide2.mount();
+      </script>
+      <script>
+        function toggleOff() { //toggles menu on button click
+          document.getElementById('menu-btn').checked = false;
+        }
+      </script>
   </body>
 </html>
