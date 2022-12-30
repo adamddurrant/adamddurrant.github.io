@@ -36,14 +36,7 @@
 $primary-button: rgb(0, 0, 0);
 $body-font: 15px;
 
-/* video */
-video {
-  width: 100%;
-  aspect-ratio: 16/9;
-}
-
 /* main styles */
-
 @include headings {
   font-family: 'Vollkorn';
   font-style: normal;
@@ -91,17 +84,6 @@ body {
 
 .blog-link {
   font-size: 0.9rem;
-}
-
-.blog-link-container {
-  position: relative;
-  bottom: 0;
-  padding-left: 5%;
-  margin-bottom: 0;
-}
-
-.blog-link-arrow {
-  width: 25px;
 }
 
 .excerpt {
@@ -598,26 +580,6 @@ textarea {
   margin-bottom: 30px;
 }
 
-/* slider */
-.slide-wrapper {
-  min-height: 27em;
-  background-color: transparent;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 41em;
-  border-radius: 0.6em;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  display: flex;
-  border: 1px solid black;
-}
-button#prev {
-  display: none;
-}
-
 .testimonial-container * {
   transition: 0.5s all;
 }
@@ -628,29 +590,6 @@ button#prev {
   height: 100%;
   position: relative;
   padding: 1.8em 1.2em;
-}
-.slide-wrapper button {
-  font-size: 1.8em;
-  height: 2.2em;
-  width: 2.2em;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 110%;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  border: none;
-  background-color: #fff;
-  border: 1px solid black;
-  cursor: pointer;
-  border-radius: 50%;
-}
-button#next {
-  right: -1.1em;
-}
-button#prev {
-  left: -1.1em;
 }
 
 .testimonial-container p {
