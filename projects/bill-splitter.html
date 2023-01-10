@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="images/home/favicon/favicon-sml.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link href="images/home/favicon/favicon-lrg.png" rel="apple-touch-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Tailwind-->
+    <script src="/js/splitter/tailwind.config.js"></script>
+    <!--Tailwind config-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Space Mono";
+        font-size: 22px;
+      }
+    </style>
+    <title>Bill Splitter & Tip Calculator App</title>
+  </head>
+  <body class="bg-light-grayish-cyan">
+    <!--logo-->
+    <header class="tip-container max-w-sm w-full px-2 mx-auto my-16 flex">
+      <img class="mx-auto" src="/images/splitter/logo.svg" />
+    </header>
+
+    <!--main-->
+    <main
+      id="container"
+      class="max-w-4xl mx-auto rounded-xl shadow-md bg-white mb-20 flex justify-center p-8 max-[800px]:flex-wrap max-[800px]:p-2"
+    >
+      <div
+        id="left"
+        class="flex flex-col w-[50%] p-6 justify-center max-[800px]:block max-[800px]:w-full"
+      >
+        <div class="relative" id="bill-total-wrapper">
+          <label class="text-sm mb-2" for="bill-input">Bill Total</label>
+          <input
+            required
+            class="bg-very-light-grayish-cyan text-very-dark-cyan text-2xl w-full p-2 pl-8 text-right"
+            id="bill-input"
+            type="number"
+            placeholder="0.00"
+          />
+          <img
+            class="absolute bottom-[15px] left-3 w-[13px]"
+            src="/images/splitter/pound-icon.svg"
+          />
+        </div>
+        <label class="text-sm mt-6 mb-2 w-full" for="custom">Tip %</label>
+        <div class="flex flex-wrap justify-between">
+          <button
+            class="percent-button cursor-pointer p-2 w-[30%] text-[20px] mb-4 rounded-lg bg-very-dark-cyan text-white focus:bg-cyan"
+            type="button"
+          >
+            5%
+          </button>
+          <button
+            class="percent-button cursor-pointer p-2 w-[30%] text-[20px] mb-4 rounded-lg bg-very-dark-cyan text-white focus:bg-cyan"
+            type="button"
+          >
+            10%
+          </button>
+          <button
+            class="percent-button cursor-pointer p-2 w-[30%] text-[20px] mb-4 rounded-lg bg-very-dark-cyan text-white focus:bg-cyan"
+            type="button"
+          >
+            15%
+          </button>
+          <button
+            class="percent-button cursor-pointer p-2 w-[30%] text-[20px] mb-4 rounded-lg bg-very-dark-cyan text-white focus:bg-cyan"
+            type="button"
+          >
+            20%
+          </button>
+          <button
+            class="percent-button cursor-pointer py-2 w-[30%] text-[20px] mb-4 rounded-lg bg-very-dark-cyan text-white focus:bg-cyan"
+            type="button"
+          >
+            25%
+          </button>
+          <button
+            class="percent-button cursor-pointer py-2 w-[30%] text-[20px] mb-4 rounded-lg bg-very-dark-cyan text-white focus:bg-cyan"
+            type="button"
+          >
+            30%
+          </button>
+        </div>
+
+        <div id="people" class="flex flex-wrap flex justify-between relative">
+          <label class="text-sm mt-2 mb-2" for="people-number"
+            >Number of people</label
+          >
+          <input
+            id="people-number"
+            type="number"
+            class="w-full text-2xl bg-very-light-grayish-cyan text-very-dark-cyan p-2 pl-8 text-right"
+            placeholder="1"
+            value="1"
+          />
+          <img
+            class="absolute bottom-[18px] left-3 w-[13px]"
+            src="/images/splitter/icon-person.svg"
+            alt="person"
+          />
+        </div>
+        <p id="error" class="text-red-300 text-sm"></p>
+      </div>
+      <div
+        id="right"
+        class="flex flex-col bg-very-dark-cyan rounded-xl w-[50%] p-6 justify-start ml-6 relative py-12 max-[800px]:block max-[800px]:w-full max-[800px]:h-[400px] max-[800px]:mr-6 max-[800px]:mb-12"
+      >
+        <div id="tip-wrapper" class="flex justify-between px-6 mb-6">
+          <div class="flex flex-col" id="tip-text-wrapper">
+            <h2 class="text-white text-[19px]">Tip Amount</h2>
+            <h3 class="text-grayish-cyan text-[16px]">/ person:</h3>
+          </div>
+          <div class="flex flex-row" id="tip-value-wrapper">
+            <span
+              class="inline text-cyan font-semibold text-3xl max-[800px]:text-2xl"
+              >£</span
+            >
+            <span
+              id="total-tip"
+              class="text-cyan font-semibold text-3xl max-[800px]:text-2xl inline"
+              id="tip-value"
+              >0.00</span
+            >
+          </div>
+        </div>
+        <div id="bill-wrapper" class="flex justify-between px-6">
+          <div class="flex flex-col" id="bill-text-wrapper">
+            <h2 class="text-white text-[19px]">Bill Amount</h2>
+            <h3 class="text-grayish-cyan text-[16px]">/ person:</h3>
+          </div>
+          <div class="flex flex-row" id="bill-value-wrapper">
+            <span
+              class="inline text-cyan font-semibold text-3xl max-[800px]:text-2xl"
+              >£</span
+            >
+            <span
+              id="total-bill"
+              class="text-cyan font-semibold text-3xl max-[800px]:text-2xl"
+              id="tip-value"
+              >0.00</span
+            >
+          </div>
+        </div>
+        <div
+          class="button-wrapper absolute max-[800px]:w-full bottom-[40px] px-6 w-full right-0"
+        >
+          <button
+            id="reset"
+            type="button"
+            class="w-full bg-cyan rounded-md uppercase px-6 py-2 text-[18px]"
+          >
+            reset
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="/js/splitter/script.js"></script>
+  </body>
+</html>
