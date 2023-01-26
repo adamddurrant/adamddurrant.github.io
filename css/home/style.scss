@@ -1159,6 +1159,8 @@ a:-webkit-any-link {
   border: 1px solid black;
   border-radius: 100%;
   z-index: 1;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 #nav-item {
