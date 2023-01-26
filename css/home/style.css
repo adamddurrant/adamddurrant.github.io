@@ -1,14 +1,8 @@
 /* imports */
-@import url("https://fonts.googleapis.com/css?family=Vollkorn&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 /* mixins */
 /* variables */
-/* video */
-video {
-  width: 100%;
-  aspect-ratio: 16/9;
-}
-
 /* main styles */
 h1,
 h2,
@@ -16,7 +10,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Vollkorn";
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizelegibility;
@@ -63,17 +57,6 @@ body {
 
 .blog-link {
   font-size: 0.9rem;
-}
-
-.blog-link-container {
-  position: relative;
-  bottom: 0;
-  padding-left: 5%;
-  margin-bottom: 0;
-}
-
-.blog-link-arrow {
-  width: 25px;
 }
 
 .excerpt {
@@ -568,6 +551,10 @@ section {
   width: 30px;
 }
 
+.smaller {
+  width: 25px;
+}
+
 .intro::before {
   content: "";
   position: absolute;
@@ -599,9 +586,9 @@ section {
 }
 
 .sub-heading {
-  font-family: Vollkorn;
+  font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   text-rendering: optimizelegibility;
   line-height: 1.1;
   font-size: 25px;
@@ -626,27 +613,6 @@ textarea {
   margin-bottom: 30px;
 }
 
-/* slider */
-.slide-wrapper {
-  min-height: 27em;
-  background-color: transparent;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 41em;
-  border-radius: 0.6em;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  display: flex;
-  border: 1px solid black;
-}
-
-button#prev {
-  display: none;
-}
-
 .testimonial-container * {
   transition: 0.5s all;
 }
@@ -657,32 +623,6 @@ button#prev {
   height: 100%;
   position: relative;
   padding: 1.8em 1.2em;
-}
-
-.slide-wrapper button {
-  font-size: 1.8em;
-  height: 2.2em;
-  width: 2.2em;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 110%;
-  position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  border: none;
-  background-color: #fff;
-  border: 1px solid black;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-button#next {
-  right: -1.1em;
-}
-
-button#prev {
-  left: -1.1em;
 }
 
 .testimonial-container p {
@@ -872,9 +812,9 @@ nav ul li a {
 
 .logo {
   width: 85px;
-  font-family: "Vollkorn";
+  font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 27px;
   float: left;
 }
@@ -901,6 +841,7 @@ nav ul li a {
   justify-content: left;
   margin: 0px;
   font-family: "Work Sans", sans-serif;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -961,9 +902,9 @@ nav ul li a {
 .hero-text {
   font-size: 45px;
   line-height: 50px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.01em;
-  font-family: Vollkorn;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -986,9 +927,8 @@ nav ul li a {
 h1 {
   font-size: 45px;
   line-height: 50px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
-  font-weight: 700;
   z-index: 1;
 }
 
@@ -1168,6 +1108,7 @@ a:-webkit-any-link {
 .type {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .project-links {
@@ -1255,8 +1196,8 @@ a:-webkit-any-link {
 }
 
 .project-title {
-  font-family: "Work Sans", sans-serif;
-  font-size: 1.5em;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25em;
   margin: 0 0 20px 0;
   color: #000000;
   font-weight: 500;

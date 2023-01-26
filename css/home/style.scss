@@ -1,6 +1,6 @@
 /* imports */
-@import url('https://fonts.googleapis.com/css?family=Vollkorn&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 /* mixins */
 @mixin flex($direction, $background) {
@@ -38,7 +38,7 @@ $body-font: 15px;
 
 /* main styles */
 @include headings {
-  font-family: 'Vollkorn';
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizelegibility;
@@ -58,11 +58,11 @@ body {
 }
 .read-time {
   font-size: 14px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .blog-title {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
   line-height: 1.2;
   margin-top: 0px;
@@ -87,7 +87,7 @@ body {
 }
 
 .excerpt {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   line-height: 1.4;
   font-size: 0.9rem;
   color: rgb(60, 60, 60);
@@ -521,9 +521,13 @@ section {
 .project-icons {
   width: 30px;
 }
+
+.smaller {
+  width: 25px;
+}
 //blue blob
 .intro::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 70vh;
   height: 100%;
@@ -553,9 +557,9 @@ section {
 }
 
 .sub-heading {
-  font-family: Vollkorn;
+  font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   text-rendering: optimizelegibility;
   line-height: 1.1;
   font-size: 25px;
@@ -567,7 +571,7 @@ textarea {
   height: 50px;
   padding: 12px 0px;
   margin: 8px 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   box-sizing: border-box;
   background-color: transparent;
   border: none;
@@ -576,7 +580,7 @@ textarea {
 
 textarea {
   height: 100px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   margin-bottom: 30px;
 }
 
@@ -594,7 +598,7 @@ textarea {
 
 .testimonial-container p {
   color: #000000;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-align: center;
   font-size: 17px;
   line-height: 1.5em;
@@ -629,7 +633,7 @@ textarea {
 .testimonial-name h3 {
   color: #000000;
   font-size: 1em;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-align: left;
   margin: 0px;
   margin-bottom: 5px;
@@ -651,7 +655,7 @@ textarea {
 
 .testimonial-container h6 {
   color: #000000;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 0.9em;
   letter-spacing: 0.03em;
   font-weight: 400;
@@ -697,7 +701,7 @@ textarea {
 .form-submit {
   padding: 2%;
   background-color: transparent;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-align: center;
   font-size: 16px;
   width: 30%;
@@ -745,7 +749,7 @@ body {
   top: -29px;
   right: 0px;
   z-index: 1;
-  font-family: 'Playfair Display', sans-serif;
+  font-family: "Playfair Display", sans-serif;
   font-size: 116px;
 }
 
@@ -769,9 +773,9 @@ nav ul li a {
 
 .logo {
   width: 85px;
-  font-family: 'Vollkorn';
+  font-family: "Inter", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 27px;
   float: left;
 }
@@ -781,7 +785,7 @@ nav ul li a {
 }
 
 .skills {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,7 +802,8 @@ nav ul li a {
 .skills-used {
   justify-content: left;
   margin: 0px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,7 +855,7 @@ nav ul li a {
 
 .toolkit-heading {
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 15px;
   margin-bottom: 15px;
   margin-top: 40px;
@@ -870,9 +875,9 @@ nav ul li a {
 .hero-text {
   font-size: 45px;
   line-height: 50px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: -0.01em;
-  font-family: Vollkorn;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -895,9 +900,8 @@ nav ul li a {
 h1 {
   font-size: 45px;
   line-height: 50px;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
-  font-weight: 700;
   z-index: 1;
 }
 
@@ -957,7 +961,7 @@ h1 {
 .social-item {
   margin-right: 30px;
   font-size: 18px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -979,7 +983,7 @@ h1 {
 .contact-button a {
   padding: 2%;
   background-color: transparent;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-align: center;
   min-width: 120px;
   min-height: 30px;
@@ -1026,7 +1030,7 @@ p {
   font-weight: normal;
   margin-top: 0px;
   word-spacing: normal;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 form {
@@ -1076,7 +1080,7 @@ a:-webkit-any-link {
 }
 
 .type {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -1103,7 +1107,7 @@ a:-webkit-any-link {
   display: flex;
   flex-direction: column;
   color: #000000;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-align: center;
   font-size: 17px;
   line-height: 1.5em;
@@ -1166,8 +1170,8 @@ a:-webkit-any-link {
 }
 
 .project-title {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.5em;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25em;
   margin: 0 0 20px 0;
   color: #000000;
   font-weight: 500;
@@ -1208,7 +1212,7 @@ a:-webkit-any-link {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   text-align: center;
 }
 
@@ -1249,7 +1253,7 @@ a:-webkit-any-link {
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: #333;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   position: absolute;
