@@ -598,7 +598,7 @@ input,
 textarea {
   width: 100%;
   height: 50px;
-  padding: 12px 0px;
+  padding: 12px 5px;
   margin: 8px 0;
   font-family: "Work Sans", sans-serif;
   box-sizing: border-box;
@@ -611,6 +611,10 @@ textarea {
   height: 100px;
   font-family: "Work Sans", sans-serif;
   margin-bottom: 30px;
+}
+
+#name #email #user_message {
+  padding-left: 5px;
 }
 
 .testimonial-container * {
@@ -737,15 +741,20 @@ textarea {
   width: 30%;
   min-height: 30px;
   border: 1px solid black;
+  color: white;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  transition: background-color 0.5s;
+  border-radius: 5px;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .form-submit:hover {
+  opacity: 60%;
+  transition: all 0.5s;
   color: white;
   background-color: black;
   transition: 0.5s all;
@@ -1002,17 +1011,24 @@ h1 {
 .contact-button {
   display: flex;
   height: 40px;
+  border-radius: 5px;
+  transition: all 0.5s;
 }
 
 .contact-button a:hover {
+  opacity: 60%;
   color: white;
   background-color: black;
   transition: 0.5s all;
+  transition: all 0.5s;
 }
 
 .contact-button a {
+  border-radius: 5px;
+  transition: all 0.5s;
   padding: 2%;
-  background-color: transparent;
+  background-color: black;
+  color: white !important;
   font-family: "Work Sans", sans-serif;
   text-align: center;
   min-width: 120px;
@@ -1240,8 +1256,15 @@ a:-webkit-any-link {
   display: block;
   padding: 20px 20px;
   text-decoration: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   text-align: center;
+  transition: all 0.5s;
+}
+
+.header li a:hover {
+  opacity: 60%;
+  transition: all 0.5s;
 }
 
 .header .logo {
