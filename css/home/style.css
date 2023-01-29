@@ -846,6 +846,59 @@ nav ul li a {
   max-width: 900px;
 }
 
+.availability {
+  border-radius: 100px;
+  border: 1px solid black;
+  display: inline-flex;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  z-index: 99999;
+  right: 0%;
+  bottom: 5%;
+  padding: 10px;
+  padding-right: 15px;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.available {
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+}
+
+.available::before {
+  content: "";
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 6px;
+  background-color: rgb(49, 198, 49);
+  margin-right: 7px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: pulse-animation 2s infinite;
+          animation: pulse-animation 2s infinite;
+}
+
+@-webkit-keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+}
 .skills-used {
   justify-content: left;
   margin: 0px;
@@ -922,7 +975,7 @@ nav ul li a {
 
 .hero-text img {
   width: 54px;
-  top: 7px;
+  top: 5px;
   position: relative;
 }
 
@@ -1196,12 +1249,17 @@ a:-webkit-any-link {
   margin-bottom: 0px;
 }
 
+.form-submit {
+  width: 100%;
+  margin-top: 10px;
+}
+
 .profile {
-  width: 70%;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  width: 90%;
   border: 1px solid black;
   border-radius: 100%;
   z-index: 1;
-  transform: scaleX(-1);
 }
 
 #nav-item {
@@ -1224,12 +1282,14 @@ a:-webkit-any-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  padding-right: 20px;
 }
 
 .col-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 
 .header {
@@ -1376,7 +1436,7 @@ a:-webkit-any-link {
     right: -13%;
   }
   .profile {
-    width: 85%;
+    width: 80%;
   }
   .social-item {
     margin-right: 0px;
@@ -1421,6 +1481,32 @@ a:-webkit-any-link {
   .column {
     margin: 0px !important;
   }
+  .available::before {
+    width: 10px;
+    height: 10px;
+  }
+  @-webkit-keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+    }
+  }
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+    }
+  }
+  .available {
+    font-size: 13px;
+  }
+  .col-1 {
+    padding-right: 0px;
+  }
   .johnsons {
     position: relative;
   }
@@ -1462,7 +1548,7 @@ a:-webkit-any-link {
   }
   .hero-text img {
     width: 50px;
-    top: 9px;
+    top: 5px;
     z-index: 1;
   }
   .content-section {
@@ -1478,6 +1564,7 @@ a:-webkit-any-link {
   }
   .col-2 {
     margin-top: 48px;
+    position: relative;
   }
   .row {
     flex-direction: column;
